@@ -1,0 +1,93 @@
+@import "../../assets/tiles.less";
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.action-list {
+    background: #000000ee;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    table {
+        border-collapse: collapse;
+        
+        :last-child td {
+            border-bottom: none;
+        }
+        td {
+            border-bottom: solid 1px #c1c1c1;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+.action-details {
+    position: relative;
+    > p {
+        margin-top: 0;
+    }
+    .action-type {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .action-name {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+    }    
+}
+
+.tech-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: serif;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.tech-button:hover {
+    text-decoration: underline;
+}
+
+.tile-group {
+    text-align: center;
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+.tile-button {
+    border: solid 3px #e19a7c;
+    border-radius: 0.125rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 150px;
+    margin: 0 0.25rem 0.5rem 0.25rem;
+    width: 150px;
+}
+.tile-button:hover,
+.tile-button:focus,
+.tile-button.active {
+    border: solid 3px #f34232;
+    transition: 0.25s;
+}
+.tile-button.active {
+    position: relative;
+    top: 0.5rem;
+}
+.tile-content {
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
