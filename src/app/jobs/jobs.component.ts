@@ -8,8 +8,14 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class JobsComponent {
   show : any[] = [];
-  jobs : any [] = [];
-  tech : any [] = [];
+  jobs : any[] = [];
+  techs : any[] = [];
+  
+  tech : any[] = [];
+    action : any[] = [];
+    reaction : any[] = [];
+    support : any[] = [];
+    movement : any[] = [];
 
   scroll(link : string) {
     console.log(link);
@@ -25,27 +31,25 @@ export class JobsComponent {
     }
   }
 
-  checkLists( job : any[], abil : string ) {
-    let list : any[] = this.tech.filter((item: any) => item.job == (job));
-    let action : any[] = list.filter((item: any) => item.type == (abil));
-    return action.length > 0;
+  getTech( job : any[] ) {
+    this.tech = this.techs.filter((item: any) => item.job == (job));
+    this.action = this.tech.filter((item: any) => item.type == ('Action'));
+    this.reaction = this.tech.filter((item: any) => item.type == ('Reaction'));
+    this.support = this.tech.filter((item: any) => item.type == ('Support'));
+    this.movement = this.tech.filter((item: any) => item.type == ('Movement'));
+    return this.tech
   }
 
-  getTech( job : any[] ) {
-    return this.tech.filter((item: any) => item.job == (job));
+  checkTech( abil : string ) {
+    let action : any[] = this.tech.filter((item: any) => item.type == (abil));
+    return action.length > 0;
   }
   
-  getType( job : any[], abil : string ) {
-    let list = this.getTech(job);
-    let action : any[] = list.filter((item: any) => item.type == (abil));
-    return action.length > 0;
-  }
-
   constructor( private http: HttpClient ) { }
   
   ngOnInit(): void {
     this.http.get('assets/jobs.json').subscribe((data : any) => { this.jobs = data });
-    this.http.get('assets/tech.json').subscribe((data : any) => { this.tech = data });
+    this.http.get('assets/tech.json').subscribe((data : any) => { this.techs = data });
     
     for (let i = 0; i < this.jobs.length; i++) {
       this.show.push (false)

@@ -1,6 +1,7 @@
 <h1 class="txt-center">Jobs</h1>
 <div class="tile-group">
     <ng-container *ngFor="let job of jobs; let i = index">
+        <!-- <p>{{tech | json}}</p> -->
         <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)">{{job.name}}</button>
         <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
             <div class="container">
@@ -31,58 +32,50 @@
                     <h3>{{job.act}}</h3>
                     <div class="action-list" *ngIf="getTech(job.name).length > 0">
                         <!-- ACTION -->
-                        <table *ngIf="checkLists( job.name, 'Action' )">
+                        <table *ngIf="action.length > 0">
                             <tr>
                                 <td><h4>Actions</h4></td>
                                 <td class="txt-right"><strong>JP</strong></td>
                             </tr>
-                            <ng-container *ngFor="let tec of tech">
-                                <tr *ngIf="tec.job == job.name && tec.type == 'Action'">
-                                    <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
-                                    <td class="txt-right">{{tec.cost}}</td>
-                                </tr>
-                            </ng-container>
+                            <tr *ngFor="let tec of action">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
                         </table>
                         <!-- REACTION -->
-                        <table *ngIf="checkLists( job.name, 'Reaction' )">
+                        <table *ngIf="reaction.length > 0">
                             <tr>
                                 <td colspan="2"><h4>Reactions</h4></td>
                             </tr>
-                            <ng-container *ngFor="let tec of tech">
-                                <tr *ngIf="tec.job == job.name && tec.type == 'Reaction'">
-                                    <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
-                                    <td class="txt-right">{{tec.cost}}</td>
-                                </tr>
-                            </ng-container>
+                            <tr  *ngFor="let tec of reaction">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
                         </table>
                         <!-- SUPPORT -->
-                        <table *ngIf="checkLists( job.name, 'Support' )">
+                        <table *ngIf="support.length > 0">
                             <tr>
                                 <td colspan="2"><h4>Support</h4></td>
                             </tr>
-                            <ng-container *ngFor="let tec of tech">
-                                <tr *ngIf="tec.job == job.name && tec.type == 'Support'">
-                                    <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
-                                    <td class="txt-right">{{tec.cost}}</td>
-                                </tr>
-                            </ng-container>
+                            <tr *ngFor="let tec of support">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
                         </table>
                         <!-- MOVEMENT -->
-                        <table *ngIf="checkLists( job.name, 'Movement' )">
+                        <table *ngIf="movement.length > 0">
                             <tr>
                                 <td colspan="2"><h4>Movement</h4></td>
                             </tr>
-                            <ng-container *ngFor="let tec of tech">
-                                <tr *ngIf="tec.job == job.name && tec.type == 'Movement'">
-                                    <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
-                                    <td class="txt-right">{{tec.cost}}</td>
-                                </tr>
-                            </ng-container>
+                            <tr *ngFor="let tec of movement">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
                         </table>
                     </div>
 
                     <ng-container *ngFor="let tec of tech">
-                        <div class="action-details" *ngIf="tec.job == job.name">
+                        <div class="action-details">
                             <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
                             <strong class="action-type">{{tec.type}}</strong>
                             <p>{{tec.desc}}</p>
@@ -120,7 +113,6 @@
                             </ng-container>
                         </div>
                     </ng-container>
-                    <br>
                 </div>
             </div>
         </div>
