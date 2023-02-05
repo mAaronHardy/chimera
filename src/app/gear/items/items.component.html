@@ -1,0 +1,39 @@
+<h2>Items</h2>
+<div class="table-dark">
+    <div class="grid">
+        <p class="col xs-50">
+            <label>Weapon Type: 
+                <select id="type" [(ngModel)]="type" (change)="filter()">
+                    <option ngValue="All">- All -</option>
+                    <option ngValue="Healing">Healing</option>
+                    <option ngValue="Status">Status</option>
+                    <option ngValue="Thrown">Thrown</option>
+                </select>
+            </label>
+        </p>
+        <p class="col xs-50 txt-right">
+            <label>
+                <span>Rare: </span>
+                <input type="checkbox" [(ngModel)]="rare" (change)="filter()">
+            </label>
+        </p>
+    </div>
+    <table class="table-dark">
+        <tr>
+            <td></td>
+            <td><strong>Name</strong></td>
+            <td><strong>Effect</strong></td>
+            <td class="txt-right"><strong>Cost</strong></td>
+        </tr>
+        <tr *ngFor="let item of list">
+            <td>{{icon(item.type)}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <span>{{item.effect}}</span>
+                <br *ngIf="item.effect && item.equip">
+                <span>{{item.equip}}</span>
+            </td>
+            <td class="txt-right">{{item.cost}}</td>
+        </tr>
+    </table>
+</div>

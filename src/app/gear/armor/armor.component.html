@@ -1,0 +1,57 @@
+<style>
+    .pnt {
+        padding-right: 1rem;
+    }
+</style>
+
+<h2>Equip</h2>
+<div class="table-dark">
+    <div class="grid">
+        <p class="col xs-50">
+            <label>Equip Type: 
+                <select id="type" [(ngModel)]="type" (change)="filter()">
+                    <option ngValue="All">- All -</option>
+                    <option ngValue="Hat">Hat</option>
+                    <option ngValue="Helm">Helm</option>
+                    <option ngValue="Clothes">Clothes</option>
+                    <option ngValue="Armor">Armor</option>
+                    <option ngValue="Robe">Robe</option>
+                    <option ngValue="Accessory">- Accessory -</option>
+                    <option ngValue="Cloak">Cloak</option>
+                    <option ngValue="Gloves">Gloves</option>
+                    <option ngValue="Shoes">Shoes</option>
+                    <option ngValue="Amulet">Amulet</option>
+                    <option ngValue="Ring">Ring</option>
+                </select>
+            </label>
+        </p>
+        <p class="col xs-50 txt-right">
+            <label>
+                <span>Rare Armor: </span>
+                <input type="checkbox" [(ngModel)]="rare" (change)="filter()">
+            </label>
+        </p>
+    </div>
+    <table class="table-dark">
+        <tr>
+            <td></td>
+            <td><strong>Name</strong></td>
+            <td class="txt-center pnt"><strong>Hp</strong></td>
+            <td class="txt-center pnt"><strong>Fp</strong></td>
+            <td><strong>Effect</strong></td>
+            <td class="txt-right"><strong>Cost</strong></td>
+        </tr>
+        <tr *ngFor="let eqip of list">
+            <td>{{icon(eqip.type)}}</td>
+            <td>{{eqip.name}}</td>
+            <td class="txt-center pnt">{{eqip.hp}}</td>
+            <td class="txt-center pnt">{{eqip.fp}}</td>
+            <td>
+                <span>{{eqip.effect}}</span>
+                <br *ngIf="eqip.effect && eqip.equip">
+                <span>{{eqip.equip}}</span>
+            </td>
+            <td class="txt-right">{{eqip.cost}}</td>
+        </tr>
+    </table>
+</div>

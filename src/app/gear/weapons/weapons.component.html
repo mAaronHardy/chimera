@@ -1,0 +1,56 @@
+<h2>Weapons</h2>
+<div class="table-dark">
+    <div class="grid">
+        <p class="col xs-50 p">
+            <label>Weapon Type: 
+                <select id="type" [(ngModel)]="type" (change)="filter()">
+                    <option ngValue="All">- All -</option>
+                    <option ngValue="Dagger">Dagger</option>
+                    <option ngValue="Sword">Sword</option>
+                    <option ngValue="Axe">Axe</option>
+                    <option ngValue="Bow">Bow</option>
+                    <option ngValue="Crossbow">Crossbow</option>
+                    <option ngValue="Cane">Cane</option>
+                    <option ngValue="Katana">Katana</option>
+                    <option ngValue="Hammer">Hammer</option>
+                    <option ngValue="Gun">Gun</option>
+                    <option ngValue="Book">Book</option>
+                    <option ngValue="Bag">Bag</option>
+                    <option ngValue="Cloth">Cloth</option>
+                    <option ngValue="Shield">Shield</option>
+                </select>
+            </label>
+        </p>
+        <p class="col xs-50 txt-right p">
+            <label>
+                <span>Rare Weapons: </span>
+                <input type="checkbox" [(ngModel)]="rare" (change)="filter()">
+            </label>
+        </p>
+    </div>
+    <p class="p" *ngIf="type != 'All'">{{type}} Damage: {{weaponFormula()}}</p>
+    <table class="table-dark">
+        <tr>
+            <td></td>
+            <td><strong>Name</strong></td>
+            <td class="txt-center"><strong>Pow</strong></td>
+            <td class="txt-center"><strong>Blk</strong></td>
+            <td class="txt-center range"><strong>Rng</strong></td>
+            <td><strong>Effect</strong></td>
+            <td class="txt-right"><strong>Cost</strong></td>
+        </tr>
+        <tr *ngFor="let wpn of list">
+            <td>{{icon(wpn.type)}}</td>
+            <td>{{wpn.name}}</td>
+            <td class="txt-center">{{wpn.pow}}</td>
+            <td class="txt-center">{{wpn.blk}}</td>
+            <td class="txt-center range">{{wpn.rng}}</td>
+            <td>
+                <span>{{wpn.effect}}</span>
+                <br *ngIf="wpn.effect && wpn.equip">
+                <span>{{wpn.equip}}</span>
+            </td>
+            <td class="txt-right">{{wpn.cost}}</td>
+        </tr>
+    </table>
+</div>

@@ -2,10 +2,40 @@ body {
     background: #292734;
     color: #ffffff;
 }
-
+h1 {
+    text-align: center;
+}
 .content {
     background: #ffffff;
     color: #333333;
     border-radius: 0.25rem;
     padding: 0.001rem 1rem;
+}
+.p {
+    margin-top: 0;
+}
+.top-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.table-dark {
+    background: #000000ee;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    table {
+        border-collapse: collapse;
+        
+        :last-child td {
+            border-bottom: none;
+        }
+        td {
+            border-bottom: solid 1px #c1c1c1;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
 }

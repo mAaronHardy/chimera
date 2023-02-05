@@ -30,7 +30,7 @@ import { Router } from '@angular/router';
         padding: 0.5rem 1rem;
         position: absolute;
         right: 0;
-        z-index: 1;
+        z-index: 2;
       }
       .show .menu-button {
         position: fixed;
@@ -50,6 +50,7 @@ import { Router } from '@angular/router';
       }
       .show .nav-list {
         display: block;
+        z-index: 1;
       }
       .nav-link {
         color: #333333;
@@ -95,6 +96,7 @@ import { Router } from '@angular/router';
       <ul class="nav-list">
         <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
         <li class="nav-item"><a routerLink="/jobs" class="nav-link">Jobs</a></li>
+        <li class="nav-item"><a routerLink="/gear" class="nav-link">Gear</a></li>
       </ul>
     </nav>
   `,

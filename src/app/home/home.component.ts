@@ -7,8 +7,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent {
-  scroll(link : string) {
-    console.log(link);
-    document.getElementById(link)!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  scroll(link : string) { document.getElementById(link)!.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+
+  ngOnInit(): void {
+    window.scroll({top: 0})
   }
 }

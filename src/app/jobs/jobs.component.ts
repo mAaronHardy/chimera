@@ -18,7 +18,6 @@ export class JobsComponent {
     movement : any[] = [];
 
   scroll(link : string) {
-    console.log(link);
     document.getElementById(link)!.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   
@@ -48,11 +47,13 @@ export class JobsComponent {
   constructor( private http: HttpClient ) { }
   
   ngOnInit(): void {
-    this.http.get('assets/jobs.json').subscribe((data : any) => { this.jobs = data });
-    this.http.get('assets/tech.json').subscribe((data : any) => { this.techs = data });
+    window.scroll({top: 0})
+    
+    this.http.get('assets/data/jobs.json').subscribe((data : any) => { this.jobs = data });
+    this.http.get('assets/data/tech.json').subscribe((data : any) => { this.techs = data });
     
     for (let i = 0; i < this.jobs.length; i++) {
       this.show.push (false)
     }
-  }
+    }
 }
