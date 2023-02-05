@@ -18,14 +18,14 @@
     "cost": 80,
     "tags": [
       "Physical",
-      "Barehanded"
+      "Barehanded",
+      ""
       ]
   },
   {
     "num": 1,
     "name": "Petrified",
     "desc": "Throw a Petrified to deal a small amount of damage. Has a chance of pushing the target.",
-    "info": "Courier",
     "job": "Courier",
     "type": "Action",
     "fp": null,

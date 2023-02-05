@@ -1,5 +1,5 @@
 <h1 class="txt-center">Jobs</h1>
-<div class="tile-group">
+<div class="tile-group container">
     <ng-container *ngFor="let job of jobs; let i = index">
         <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)">{{job.name}}</button>
         <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
@@ -27,8 +27,8 @@
                             <p>Agi <strong>{{job.agi}}</strong></p>
                         </div>
                     </div>
-                    <p>Equip: <span *ngFor="let equ of job.equip; let i = index"><span *ngIf="i > 0">, </span><strong>{{job.equip[i]}}</strong></span></p>
-                    <p *ngIf="job.init.length > 0">Starting Tech: <span *ngFor="let ini of job.init; let i = index"><span *ngIf="i > 0">, </span><strong>{{job.init[i]}}</strong></span></p>
+                    <p>Equip: <span *ngFor="let equ of job.equip; let i = index;"><span *ngIf="i > 0 && equ != ''">, </span><strong>{{equ}}</strong></span></p>
+                    <p *ngIf="job.init[0] != ''">Starting Tech: <span *ngFor="let ini of job.init; let i = index"><span *ngIf="i > 0">, </span><strong>{{job.init[i]}}</strong></span></p>
 
                     <h3>{{job.act}}</h3>
                     <div class="table-dark" *ngIf="getTech(job.name).length > 0">
@@ -94,7 +94,7 @@
                                     <span *ngIf="tec.pow && tec.effect">, </span>
                                     <span *ngIf="tec.effect">{{tec.effect}}</span>
                                 </p>
-                                <p *ngIf="tec.tags"><span *ngFor="let tag of tec.tags let i = index">[{{tec.tags[i]}}] </span></p>
+                                <p *ngIf="tec.tags"><span *ngFor="let tag of tec.tags"><span *ngIf="tag != ''">[{{tag}}]</span> </span></p>
                             </ng-container>
                             <!-- SPECIAL TECH -->
                             <ng-container *ngIf="tec.tags.includes('Special')">
@@ -126,6 +126,6 @@
                 </div>
             </div>
         </div>
-    <div *ngIf="i == 1"></div>
+    <div class="lg-show" *ngIf="i == 1 || i == 13 || i == 16"></div>
     </ng-container>
 </div>

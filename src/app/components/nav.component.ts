@@ -20,6 +20,9 @@ import { Router } from '@angular/router';
         text-decoration: none;
         text-transform: uppercase;
       }
+      .home-link:hover {
+        color: #ca0b4a;
+      }
       .menu-button {
         background: none;
         border: none;
@@ -31,6 +34,9 @@ import { Router } from '@angular/router';
         position: absolute;
         right: 0;
         z-index: 2;
+      }
+      .menu-button:hover {
+        color: #ca0b4a;
       }
       .show .menu-button {
         position: fixed;
@@ -62,7 +68,8 @@ import { Router } from '@angular/router';
         text-transform: uppercase;
       }
       .nav-link:hover {
-        text-decoration: underline;
+        color: #ca0b4a;
+        font-weight: bold;
       }
 
       @media only screen and (min-width: 35rem) {
