@@ -13,18 +13,18 @@
     "dex": 0,
     "agi": 1,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Daggers",
-       "Sword",
-       "Axes",
-       "Hammers",
-       "Hats",
-       "Clothes",
-       ""
+      "Daggers",
+      "Sword",
+      "Axes",
+      "Hammers",
+      "Hats",
+      "Clothes",
+      ""
     ]
- },
+  },
   {
     "num": 1,
     "name": "Artisan",
@@ -39,18 +39,18 @@
     "dex": 2,
     "agi": 1,
     "init": [
-       "Throw Items"
+      "Throw Items"
     ],
     "equip": [
-       "Daggers",
-       "Guns",
-       "Hats",
-       "Clothes",
-       "",
-       "",
-       ""
+      "Daggers",
+      "Guns",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 2,
     "name": "Fighter",
@@ -65,18 +65,18 @@
     "dex": 1,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Sword",
-       "Axes",
-       "Hammers",
-       "Shields",
-       "Helms",
-       "Armor",
-       "Robes"
+      "Sword",
+      "Axes",
+      "Hammers",
+      "Shields",
+      "Helms",
+      "Armor",
+      "Robes"
     ]
- },
+  },
   {
     "num": 3,
     "name": "Hunter",
@@ -91,18 +91,18 @@
     "dex": 3,
     "agi": 0,
     "init": [
-       "Beastmaster"
+      "Beastmaster"
     ],
     "equip": [
-       "Bows",
-       "Crossbows",
-       "Hammers",
-       "Shields",
-       "Hats",
-       "Clothes",
-       ""
+      "Bows",
+      "Crossbows",
+      "Hammers",
+      "Shields",
+      "Hats",
+      "Clothes",
+      ""
     ]
- },
+  },
   {
     "num": 4,
     "name": "Chemist",
@@ -117,18 +117,18 @@
     "dex": 0,
     "agi": 1,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Canes",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       "",
-       ""
+      "Canes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 5,
     "name": "Medic",
@@ -143,18 +143,18 @@
     "dex": 1,
     "agi": 1,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Daggers",
-       "Bags",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       ""
+      "Daggers",
+      "Bags",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 6,
     "name": "Monk",
@@ -169,18 +169,18 @@
     "dex": 0,
     "agi": 1,
     "init": [
-       "Barehanded"
+      "Barehanded"
     ],
     "equip": [
-       "Clothes",
-       "",
-       "",
-       "",
-       "",
-       "",
-       ""
+      "Clothes",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 7,
     "name": "Mercenary",
@@ -195,18 +195,18 @@
     "dex": 2,
     "agi": 2,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Daggers",
-       "Hats",
-       "Clothes",
-       "",
-       "",
-       "",
-       ""
+      "Daggers",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 8,
     "name": "Naturalist",
@@ -221,18 +221,18 @@
     "dex": 0,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Canes",
-       "Books",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       ""
+      "Canes",
+      "Books",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 9,
     "name": "Counselor",
@@ -247,18 +247,18 @@
     "dex": 0,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Canes",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       "",
-       ""
+      "Canes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 10,
     "name": "Outlander",
@@ -273,18 +273,18 @@
     "dex": 0,
     "agi": 1,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Swords",
-       "Axes",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       ""
+      "Swords",
+      "Axes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 11,
     "name": "Knight",
@@ -299,18 +299,18 @@
     "dex": 0,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Spears",
-       "Helms",
-       "Armor",
-       "Robes",
-       "",
-       "",
-       ""
+      "Spears",
+      "Helms",
+      "Armor",
+      "Robes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 12,
     "name": "Occultist",
@@ -325,18 +325,18 @@
     "dex": 0,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Canes",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       "",
-       ""
+      "Canes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 13,
     "name": "Tactician",
@@ -351,18 +351,18 @@
     "dex": 2,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Daggers",
-       "Guns",
-       "Hats",
-       "Clothes",
-       "Robes",
-       "",
-       ""
+      "Daggers",
+      "Guns",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 14,
     "name": "Engineer",
@@ -377,18 +377,18 @@
     "dex": 2,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Hammers",
-       "Katana",
-       "Helms",
-       "Armor",
-       "Robes",
-       "",
-       ""
+      "Hammers",
+      "Katana",
+      "Helms",
+      "Armor",
+      "Robes",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 15,
     "name": "Agent",
@@ -403,18 +403,18 @@
     "dex": 2,
     "agi": 5,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Canes",
-       "Books",
-       "Hats",
-       "Robes",
-       "",
-       "",
-       ""
+      "Canes",
+      "Books",
+      "Hats",
+      "Robes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 16,
     "name": "Astrologian",
@@ -429,18 +429,18 @@
     "dex": 0,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Daggers",
-       "Hammers",
-       "Katana",
-       "Hats",
-       "Slothes",
-       "",
-       ""
+      "Daggers",
+      "Hammers",
+      "Katana",
+      "Hats",
+      "Slothes",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 17,
     "name": "Performer",
@@ -455,18 +455,18 @@
     "dex": 0,
     "agi": 1,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Daggers",
-       "Cloth",
-       "Hats",
-       "Clothes",
-       "",
-       "",
-       ""
+      "Daggers",
+      "Cloth",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 18,
     "name": "Analyst",
@@ -481,18 +481,18 @@
     "dex": 1,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Instrument",
-       "Hats",
-       "Clothes",
-       "",
-       "",
-       "",
-       ""
+      "Instrument",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      "",
+      ""
     ]
- },
+  },
   {
     "num": 19,
     "name": "Paladin",
@@ -507,18 +507,18 @@
     "dex": 1,
     "agi": 0,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Sword",
-       "Spears",
-       "Hammers",
-       "Helms",
-       "Armor",
-       "Robes",
-       ""
+      "Sword",
+      "Spears",
+      "Hammers",
+      "Helms",
+      "Armor",
+      "Robes",
+      ""
     ]
- },
+  },
   {
     "num": 20,
     "name": "Judge",
@@ -533,18 +533,18 @@
     "dex": 3,
     "agi": 2,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Sword",
-       "Axes",
-       "Guns",
-       "Helms",
-       "Armor",
-       "Robes",
-       ""
+      "Sword",
+      "Axes",
+      "Guns",
+      "Helms",
+      "Armor",
+      "Robes",
+      ""
     ]
- },
+  },
   {
     "num": 21,
     "name": "Drone",
@@ -559,16 +559,16 @@
     "dex": 2,
     "agi": 2,
     "init": [
-       ""
+      ""
     ],
     "equip": [
-       "Everything",
-       "",
-       "",
-       "",
-       "",
-       "",
-       ""
+      "Everything",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
- }
+  }
 ]

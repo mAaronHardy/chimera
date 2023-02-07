@@ -1,0 +1,130 @@
+<h1 class="txt-center">Mobs</h1>
+<div class="tile-group container">
+    <ng-container *ngFor="let mob of mobs; let i = index">
+        <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)"><p>{{mob.name}}</p></button>
+        <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
+            <div class="container">
+                <div class="content">
+                    <h2>{{mob.name}}</h2>
+                    <p>{{mob.desc}}</p>
+
+                    <h3>Base Stats</h3>
+                    <div class="grid txt-center">
+                        <div class="col xs-25">
+                            <p>Mv <strong>{{mob.mv}}</strong></p>
+                            <p>Jm <strong>{{mob.jm}}</strong></p>
+                        </div>
+                        <div class="col xs-25">
+                            <p>Str <strong>{{mob.str}}</strong></p>
+                            <p>Int <strong>{{mob.int}}</strong></p>
+                        </div>
+                        <div class="col xs-25">
+                            <p>End <strong>{{mob.end}}</strong></p>
+                            <p>Wil <strong>{{mob.wil}}</strong></p>
+                        </div>
+                        <div class="col xs-25">
+                            <p>Dex <strong>{{mob.dex}}</strong></p>
+                            <p>Agi <strong>{{mob.agi}}</strong></p>
+                        </div>
+                    </div>
+                    <p>Equip: <span *ngFor="let equ of mob.equip; let i = index;"><span *ngIf="i > 0 && equ != ''">, </span><strong>{{equ}}</strong></span></p>
+                    <p *ngIf="mob.init[0] != ''">Starting Tech: <span *ngFor="let ini of mob.init; let i = index"><span *ngIf="i > 0">, </span><strong>{{mob.init[i]}}</strong></span></p>
+
+                    <h3>{{mob.act}}</h3>
+                    <div class="table-dark" *ngIf="getTech(mob.name).length > 0">
+
+                        <table *ngIf="action.length > 0">
+                            <tr>
+                                <td><h4>Actions</h4></td>
+                                <td class="txt-right"><strong>JP</strong></td>
+                            </tr>
+                            <tr *ngFor="let tec of action">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
+                        </table>
+
+                        <table *ngIf="reaction.length > 0">
+                            <tr>
+                                <td colspan="2"><h4>Reactions</h4></td>
+                            </tr>
+                            <tr  *ngFor="let tec of reaction">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
+                        </table>
+
+                        <table *ngIf="support.length > 0">
+                            <tr>
+                                <td colspan="2"><h4>Support</h4></td>
+                            </tr>
+                            <tr *ngFor="let tec of support">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
+                        </table>
+
+                        <table *ngIf="movement.length > 0">
+                            <tr>
+                                <td colspan="2"><h4>Movement</h4></td>
+                            </tr>
+                            <tr *ngFor="let tec of movement">
+                                <td><button class="tech-button" (click)="scroll(tec.name)">{{tec.name}}</button></td>
+                                <td class="txt-right">{{tec.cost}}</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <ng-container *ngFor="let tec of tech">
+                        <div class="action-details">
+                            <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                            <strong class="top-corner">{{tec.type}}</strong>
+                            <p>{{tec.desc}}</p>
+
+                            <ng-container *ngIf="tec.tags.includes('Physical')">
+                                <p>
+                                    <span *ngIf="tec.rng == 'Wpn'">Make a normal weapon attack.<br></span>
+                                    <span *ngIf="tec.rng != 'Wpn'">Rng {{tec.rng}}, Area {{tec.area}}<br></span>
+                                    <span *ngIf="tec.target">Target: {{tec.target}}<br></span>
+                                </p>
+                                <p>
+                                    {{tec.pow}}
+                                    <span *ngIf="tec.pow && tec.pow != 0">&times; {{tec.attr}}</span>
+                                    <span *ngIf="tec.pow">{{tec.elem}} Damage</span>
+                                    <span *ngIf="tec.pow && tec.effect">, </span>
+                                    <span *ngIf="tec.effect">{{tec.effect}}</span>
+                                </p>
+                                <p *ngIf="tec.tags"><span *ngFor="let tag of tec.tags"><span *ngIf="tag != ''">[{{tag}}]</span> </span></p>
+                            </ng-container>
+
+                            <ng-container *ngIf="tec.tags.includes('Special')">
+                                <p>
+                                    <span *ngIf="tec.rng">Rng {{tec.rng}}, Area {{tec.area}}</span>
+                                    <span *ngIf="tec.check">, {{tec.attr}} {{tec.check}}</span>
+                                </p>
+                                <p>
+                                    {{tec.pow}}
+                                    <span *ngIf="tec.pow && tec.pow != 0">&times; {{tec.attr}} </span>
+                                    <span *ngIf="tec.pow">{{tec.elem}}</span>
+                                    <span *ngIf="!tec.tags.includes('Heal') && tec.pow"> Damage</span>
+                                    <span *ngIf="tec.effect && tec.pow">, </span>
+                                    <span *ngIf="tec.effect">{{tec.effect}}</span>
+                                </p>
+                                <p *ngIf="tec.tags"><span *ngFor="let tag of tec.tags let i = index">[{{tec.tags[i]}}] </span></p>
+                            </ng-container>
+
+                            <ng-container *ngIf="!tec.tags.includes('Physical') && !tec.tags.includes('Special')">
+                                <p>
+                                    <span *ngIf="tec.target">Trigger: {{tec.target}}<br></span>
+                                    <span *ngIf="tec.rng">Rng {{tec.rng}}, Area {{tec.area}}</span>
+                                </p>
+                                <p *ngIf="tec.effect">{{tec.effect}}</p>
+                                <p *ngIf="tec.tags.length > 0"><span *ngFor="let tag of tec.tags let i = index">[{{tec.tags[i]}}] </span></p>
+                            </ng-container>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

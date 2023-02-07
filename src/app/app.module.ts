@@ -10,6 +10,7 @@ import { NavComponent } from './components/nav.component';
 import { FooterComponent } from './components/footer.component';
 import { HomeComponent } from './home/home.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { MobsComponent } from './mobs/mobs.component';
 import { WeaponsComponent } from './gear/weapons/weapons.component';
 import { GearComponent } from './gear/gear.component';
 import { ArmorComponent } from './gear/armor/armor.component';
@@ -24,6 +25,7 @@ import { RulesComponent } from './rules/rules.component';
     FooterComponent,
     HomeComponent,
     JobsComponent,
+    MobsComponent,
     WeaponsComponent,
     GearComponent,
     ArmorComponent,
@@ -35,7 +37,7 @@ import { RulesComponent } from './rules/rules.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

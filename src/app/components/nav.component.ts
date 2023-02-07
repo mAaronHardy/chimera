@@ -103,6 +103,7 @@ import { Router } from '@angular/router';
       <ul class="nav-list">
         <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
         <li class="nav-item"><a routerLink="/jobs" class="nav-link">Jobs</a></li>
+        <li class="nav-item"><a routerLink="/mobs" class="nav-link">Mobs</a></li>
         <li class="nav-item"><a routerLink="/gear" class="nav-link">Gear</a></li>
       </ul>
     </nav>

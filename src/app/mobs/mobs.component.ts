@@ -2,13 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-jobs',
-  templateUrl: './jobs.component.html',
-  styleUrls: ['./jobs.component.less'],
+  selector: 'app-mobs',
+  templateUrl: './mobs.component.html',
+  styleUrls: ['./mobs.component.less'],
 })
-export class JobsComponent {
+export class MobsComponent {
   show : any[] = [];
-  jobs : any[] = [];
+  mobs : any[] = [];
   techs : any[] = [];
   
   tech : any[] = [];
@@ -49,10 +49,10 @@ export class JobsComponent {
   ngOnInit(): void {
     window.scroll({top: 0})
     
-    this.http.get('assets/data/jobs.json').subscribe((data : any) => { this.jobs = data });
+    this.http.get('assets/data/mobs.json').subscribe((data : any) => { this.mobs = data });
     this.http.get('assets/data/tech.json').subscribe((data : any) => { this.techs = data });
     
-    for (let i = 0; i < this.jobs.length; i++) {
+    for (let i = 0; i < this.mobs.length; i++) {
       this.show.push (false)
     }
     }
