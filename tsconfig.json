@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./https://maaronhardy.github.io/chimera/",
     "outDir": "./docs/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
