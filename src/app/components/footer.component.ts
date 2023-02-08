@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: '[app-footer]',
+  selector: 'app-footer',
   template: `
     <style>
       html {
@@ -27,7 +27,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         width: 100%;
       }
     </style>
-    <span>Copyright © 2023 <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=maaronhardy@gmail.com" target="_blank">m.aaronhardy@gmail.com</a></span>
+    <footer><ng-content></ng-content></footer>
   `,
   encapsulation: ViewEncapsulation.None,
 })

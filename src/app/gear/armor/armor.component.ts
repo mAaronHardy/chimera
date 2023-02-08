@@ -19,7 +19,7 @@ export class ArmorComponent {
     if ( this.type == 'All' ) {
       this.list = this.list;
     } else if ( this.type == 'Accessory' ) {
-      this.list = this.list.filter((item: any) => item.type == ('Cloak' || 'Gloves' || 'Shoes' || 'Amulet' || 'Ring'));
+      this.list = this.list.filter((item: any) => item.type == ('Cloak') || item.type == ('Gloves') || item.type == ('Shoes') || item.type == ('Amulet') || item.type == ('Ring'));
     } else {
       this.list = this.list.filter((item: any) => item.type == (this.type));
     }

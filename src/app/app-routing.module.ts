@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { RulesComponent } from './rules/rules.component';
 import { CreateComponent } from './create/create.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { MobsComponent } from './mobs/mobs.component';
 import { GearComponent } from './gear/gear.component';
 import { WeaponsComponent } from './gear/weapons/weapons.component';
 import { ArmorComponent } from './gear/armor/armor.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'rules', component: RulesComponent },
   { path: 'create', component: CreateComponent },
   { path: 'jobs', component: JobsComponent },
+  { path: 'mobs', component: MobsComponent },
   { path: 'gear', component: GearComponent,
     children: [
       { path: '', component: WeaponsComponent },
