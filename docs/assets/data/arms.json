@@ -1,0 +1,642 @@
+[
+  {
+    "num": "0",
+    "name": "Unarmed",
+    "type": "Unarmed",
+    "rare": false,
+    "pow": "Str",
+    "blk": "",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 0
+  },
+  {
+    "num": "0",
+    "name": "Dagger",
+    "type": "Dagger",
+    "rare": false,
+    "pow": "2",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield"
+    ],
+    "cost": 25
+  },
+  {
+    "num": "0",
+    "name": "Butcher Knife",
+    "type": "Dagger",
+    "rare": false,
+    "pow": "3",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "Adds: Immobile (50%)",
+    "equip": "",
+    "hands": [
+      "Dual Wield"
+    ],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Sai Dagger",
+    "type": "Dagger",
+    "rare": true,
+    "pow": "4",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield"
+    ],
+    "cost": 250
+  },
+  {
+    "num": "0",
+    "name": "Kukri",
+    "type": "Dagger",
+    "rare": false,
+    "pow": "4",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "Adds: Disabled (50%)",
+    "equip": "",
+    "hands": [
+      "Dual Wield"
+    ],
+    "cost": 300
+  },
+  {
+    "num": "0",
+    "name": "Machete",
+    "type": "Dagger",
+    "rare": true,
+    "pow": "5",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "Deadeye vs Plants",
+    "equip": "",
+    "hands": [
+      "Dual Wield"
+    ],
+    "cost": 500
+  },
+  {
+    "num": "0",
+    "name": "Shortsword",
+    "type": "Sword",
+    "rare": false,
+    "pow": "3",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": 50
+  },
+  {
+    "num": "0",
+    "name": "Longsword",
+    "type": "Sword",
+    "rare": false,
+    "pow": "6",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": 160
+  },
+  {
+    "num": "0",
+    "name": "Greatsword",
+    "type": "Sword",
+    "rare": false,
+    "pow": "9",
+    "blk": "3",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": 900
+  },
+  {
+    "num": "0",
+    "name": "Hatchet",
+    "type": "Axe",
+    "rare": false,
+    "pow": "3",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Battleaxe",
+    "type": "Axe",
+    "rare": false,
+    "pow": "8",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Graet Axe",
+    "type": "Axe",
+    "rare": false,
+    "pow": "12",
+    "blk": "1",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Shortbow",
+    "type": "Bow",
+    "rare": false,
+    "pow": "2",
+    "blk": "",
+    "rng": "5+",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "2-Hands"
+    ],
+    "cost": 50
+  },
+  {
+    "num": "0",
+    "name": "Composite Bow",
+    "type": "Bow",
+    "rare": false,
+    "pow": "3",
+    "blk": "",
+    "rng": "5+",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "2-Hands"
+    ],
+    "cost": 200
+  },
+  {
+    "num": "0",
+    "name": "Flaming Arrow",
+    "type": "Bow",
+    "rare": true,
+    "pow": "4",
+    "blk": "",
+    "rng": "5+",
+    "effect": "",
+    "equip": "Damage: Fire",
+    "hands": [
+      "2-Hands"
+    ],
+    "cost": 700
+  },
+  {
+    "num": "0",
+    "name": "Longbow",
+    "type": "Bow",
+    "rare": false,
+    "pow": "6",
+    "blk": "",
+    "rng": "5+",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "2-Hands"
+    ],
+    "cost": 850
+  },
+  {
+    "num": "0",
+    "name": "Great Bow",
+    "type": "Bow",
+    "rare": true,
+    "pow": "8",
+    "blk": "",
+    "rng": "5+",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "2-Hands"
+    ],
+    "cost": 1200
+  },
+  {
+    "num": "0",
+    "name": "Bowgun",
+    "type": "Crossbow",
+    "rare": false,
+    "pow": "2",
+    "blk": "1",
+    "rng": "4",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 40
+  },
+  {
+    "num": "0",
+    "name": "Poison Crossbow",
+    "type": "Crossbow",
+    "rare": false,
+    "pow": "3",
+    "blk": "1",
+    "rng": "4",
+    "effect": "",
+    "equip": "Effect: Poison (50%)",
+    "hands": [],
+    "cost": 200
+  },
+  {
+    "num": "0",
+    "name": "Heavy Crossbow",
+    "type": "Crossbow",
+    "rare": false,
+    "pow": "5",
+    "blk": "1",
+    "rng": "4",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 450
+  },
+  {
+    "num": "0",
+    "name": "Wooden Cane",
+    "type": "Cane",
+    "rare": false,
+    "pow": "3",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Power Grip"
+    ],
+    "cost": 20
+  },
+  {
+    "num": "0",
+    "name": "Serpent Cane",
+    "type": "Cane",
+    "rare": false,
+    "pow": "3",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "Effect: Poison (50%)",
+    "equip": "",
+    "hands": [
+      "Power Grip"
+    ],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Carbon Staff",
+    "type": "Cane",
+    "rare": true,
+    "pow": "3",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "Boost: Fire, Cast: Fire (33%)",
+    "equip": "",
+    "hands": [
+      "Power Grip"
+    ],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Nickle Walking Stick",
+    "type": "Cane",
+    "rare": true,
+    "pow": "3",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "Boost: Cold, Cast: Cold (33%)",
+    "equip": "",
+    "hands": [
+      "Power Grip"
+    ],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Copper Cane",
+    "type": "Cane",
+    "rare": true,
+    "pow": "3",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "Boost: Bolt, Cast: Bolt (33%)",
+    "equip": "",
+    "hands": [
+      "Power Grip"
+    ],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Fancy Cane",
+    "type": "Cane",
+    "rare": false,
+    "pow": "4",
+    "blk": "4",
+    "rng": "1v2",
+    "effect": "Int +2",
+    "equip": "",
+    "hands": [
+      "Power Grip"
+    ],
+    "cost": 800
+  },
+  {
+    "num": "0",
+    "name": "Katana",
+    "type": "Katana",
+    "rare": false,
+    "pow": "7",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Club",
+    "type": "Hammer",
+    "rare": false,
+    "pow": "1d4",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Mace",
+    "type": "Hammer",
+    "rare": false,
+    "pow": "1d6",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Greatclub",
+    "type": "Hammer",
+    "rare": false,
+    "pow": "1d8",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Ogre Club",
+    "type": "Hammer",
+    "rare": true,
+    "pow": "3",
+    "blk": "2",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield",
+      "Power Grip"
+    ],
+    "cost": null
+  },
+  {
+    "num": "0",
+    "name": "Flintlock",
+    "type": "Gun",
+    "rare": false,
+    "pow": "5",
+    "blk": "",
+    "rng": "8",
+    "effect": "",
+    "equip": "",
+    "hands": [
+      "Dual Wield"
+    ],
+    "cost": 450
+  },
+  {
+    "num": "0",
+    "name": "Blunderbuss",
+    "type": "Gun",
+    "rare": false,
+    "pow": "5",
+    "blk": "",
+    "rng": "8",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 450
+  },
+  {
+    "num": "0",
+    "name": "Dictionary",
+    "type": "Book",
+    "rare": false,
+    "pow": "3",
+    "blk": "",
+    "rng": "3",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 200
+  },
+  {
+    "num": "0",
+    "name": "Bestiary",
+    "type": "Book",
+    "rare": true,
+    "pow": "5",
+    "blk": "",
+    "rng": "3",
+    "effect": "Deadeye vs Monsters",
+    "equip": "",
+    "hands": [],
+    "cost": 600
+  },
+  {
+    "num": "0",
+    "name": "Battle Tactics",
+    "type": "Book",
+    "rare": false,
+    "pow": "5",
+    "blk": "",
+    "rng": "3",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 450
+  },
+  {
+    "num": "0",
+    "name": "Canvas Gag",
+    "type": "Bag",
+    "rare": false,
+    "pow": "3",
+    "blk": "",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "Fp +8",
+    "hands": [],
+    "cost": 150
+  },
+  {
+    "num": "0",
+    "name": "Medical Gag",
+    "type": "Bag",
+    "rare": false,
+    "pow": "5",
+    "blk": "",
+    "rng": "1v2",
+    "effect": "",
+    "equip": "Fp +12, Int +1",
+    "hands": [],
+    "cost": 450
+  },
+  {
+    "num": "0",
+    "name": "Decorative Cloth",
+    "type": "Cloth",
+    "rare": false,
+    "pow": "5",
+    "blk": "10",
+    "rng": "2",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 1200
+  },
+  {
+    "num": "0",
+    "name": "Buckler",
+    "type": "Shield",
+    "rare": false,
+    "pow": "",
+    "blk": "2",
+    "rng": "",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 120
+  },
+  {
+    "num": "0",
+    "name": "Kite Shield",
+    "type": "Shield",
+    "rare": false,
+    "pow": "",
+    "blk": "4",
+    "rng": "",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 250
+  },
+  {
+    "num": "0",
+    "name": "Mirror Shield",
+    "desc": "Made from the irrodescent chitin of a lurker shell, this shield innately has the ability to allow its user to deflect special techniques",
+    "type": "Shield",
+    "rare": true,
+    "pow": "",
+    "blk": "4",
+    "rng": "",
+    "effect": "",
+    "equip": "Always: Reflect",
+    "hands": [],
+    "cost": 600
+  },
+  {
+    "num": "0",
+    "name": "Fire Shield",
+    "type": "Shield",
+    "rare": true,
+    "pow": "",
+    "blk": "5",
+    "rng": "",
+    "effect": "",
+    "equip": "Imm: Fire, Res: Cold",
+    "hands": [],
+    "cost": 700
+  },
+  {
+    "num": "0",
+    "name": "Tower Shield",
+    "type": "Shield",
+    "rare": false,
+    "pow": "",
+    "blk": "8",
+    "rng": "",
+    "effect": "",
+    "equip": "",
+    "hands": [],
+    "cost": 2000
+  }
+]
