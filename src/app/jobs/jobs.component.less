@@ -12,26 +12,7 @@
     }    
 }
 
-.tile-group {
-    text-align: center;
-    
-    &::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-}
 .tile-button {
-    background-repeat: no-repeat;
-    border: solid 3px #e19a7c;
-    border-radius: 0.125rem;
-    box-sizing: border-box;
-    color: transparent;
-    cursor: pointer;
-    height: 150px;
-    margin: 0 0.25rem 0.5rem 0.25rem;
-    width: 150px;
-
     &:nth-child(1) {
         background-color: @bg-light;
         background-image: url('../../assets/images/00 Courier.png');
@@ -154,21 +135,3 @@
         background-size: 75%;
     }
 }
-.tile-button:hover,
-.tile-button:focus,
-.tile-button.active {
-    border: solid 3px #f34232;
-    outline: none;
-    transition: 0.25s;
-}
-.tile-button.active {
-    position: relative;
-    top: 0.5rem;
-}
-.tile-content {
-    text-align: left;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-// .tile-button:nth-child(0) {
