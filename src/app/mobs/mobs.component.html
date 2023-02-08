@@ -1,7 +1,9 @@
 <h1 class="txt-center">Mobs</h1>
 <div class="tile-group container-lg">
     <ng-container *ngFor="let mob of mobs; let i = index">
-        <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)"><p>{{mob.name}}</p></button>
+        <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)">
+            <img src="assets/images/{{mob.name}}.png">
+        </button>
         <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
             <div class="content">
                 <h2>{{mob.name}}</h2>
@@ -36,14 +38,41 @@
                     <tech-table [tech]="support" cat="Support" *ngIf="support.length > 0"></tech-table>
                     <tech-table [tech]="movement" cat="Movement" *ngIf="movement.length > 0"></tech-table>
                 </div>
-
-                <ng-container *ngFor="let tec of tech">
+                <ng-container *ngFor="let tec of action">
                     <div class="action-details">
                         <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
                         <strong class="top-corner">{{tec.type}}</strong>
                         <p>{{tec.desc}}</p>
                         <tech-phys *ngIf="tec.tags.includes('Physical')" [tec]="tec"></tech-phys>
                         <tech-spec *ngIf="tec.tags.includes('Special')" [tec]="tec"></tech-spec>
+                        <tech-other *ngIf="!tec.tags.includes('Physical') && !tec.tags.includes('Special')" [tec]="tec"></tech-other>
+                    </div>
+                </ng-container>
+                <ng-container *ngFor="let tec of reaction">
+                    <div class="action-details">
+                        <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                        <strong class="top-corner">{{tec.type}}</strong>
+                        <p>{{tec.desc}}</p>
+                        <tech-phys *ngIf="tec.tags.includes('Physical')" [tec]="tec"></tech-phys>
+                        <tech-spec *ngIf="tec.tags.includes('Special')" [tec]="tec"></tech-spec>
+                        <tech-other *ngIf="!tec.tags.includes('Physical') && !tec.tags.includes('Special')" [tec]="tec"></tech-other>
+                        <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
+                    </div>
+                </ng-container>
+                <ng-container *ngFor="let tec of support">
+                    <div class="action-details">
+                        <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                        <strong class="top-corner">{{tec.type}}</strong>
+                        <p>{{tec.desc}}</p>
+                        <tech-other *ngIf="!tec.tags.includes('Physical') && !tec.tags.includes('Special')" [tec]="tec"></tech-other>
+                        <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
+                    </div>
+                </ng-container>
+                <ng-container *ngFor="let tec of movement">
+                    <div class="action-details">
+                        <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                        <strong class="top-corner">{{tec.type}}</strong>
+                        <p>{{tec.desc}}</p>
                         <tech-other *ngIf="!tec.tags.includes('Physical') && !tec.tags.includes('Special')" [tec]="tec"></tech-other>
                         <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
                     </div>

@@ -1,7 +1,9 @@
 <h1 class="txt-center">Jobs</h1>
 <div class="tile-group container-lg">
     <ng-container *ngFor="let job of jobs; let i = index">
-        <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)"><p>{{job.name}}</p></button>
+        <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)">
+            <img src="assets/images/{{job.name}}.png">
+        </button>
         <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
             <div class="content">
                 <h2>{{job.name}}</h2>
