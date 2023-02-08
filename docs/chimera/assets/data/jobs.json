@@ -1,0 +1,574 @@
+[
+  {
+    "num": 0,
+    "name": "Courier",
+    "act": "Delivery",
+    "desc": "Delivery person whose focuses are mobility and poisitioning.",
+    "mv": 4,
+    "jm": 3,
+    "str": 2,
+    "int": 1,
+    "end": 0,
+    "wil": -2,
+    "dex": 0,
+    "agi": 1,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Daggers",
+      "Sword",
+      "Axes",
+      "Hammers",
+      "Hats",
+      "Clothes",
+      ""
+    ]
+  },
+  {
+    "num": 1,
+    "name": "Artisan",
+    "act": "Items",
+    "desc": "Craftsperson, skill and creating and distributing items.",
+    "mv": 3,
+    "jm": 3,
+    "str": 1,
+    "int": 1,
+    "end": 0,
+    "wil": -2,
+    "dex": 2,
+    "agi": 1,
+    "init": [
+      "Throw Items"
+    ],
+    "equip": [
+      "Daggers",
+      "Guns",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 2,
+    "name": "Fighter",
+    "act": "Assault",
+    "desc": "Warrior skilled at disabling and eliminating their enemies.",
+    "mv": 3,
+    "jm": 3,
+    "str": 3,
+    "int": 1,
+    "end": 2,
+    "wil": -3,
+    "dex": 1,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Sword",
+      "Axes",
+      "Hammers",
+      "Shields",
+      "Helms",
+      "Armor",
+      "Robes"
+    ]
+  },
+  {
+    "num": 3,
+    "name": "Hunter",
+    "act": "Aim",
+    "desc": "Trained marksman, experts at attacking prey from range.",
+    "mv": 3,
+    "jm": 3,
+    "str": 2,
+    "int": 2,
+    "end": 0,
+    "wil": -2,
+    "dex": 3,
+    "agi": 0,
+    "init": [
+      "Beastmaster"
+    ],
+    "equip": [
+      "Bows",
+      "Crossbows",
+      "Hammers",
+      "Shields",
+      "Hats",
+      "Clothes",
+      ""
+    ]
+  },
+  {
+    "num": 4,
+    "name": "Chemist",
+    "act": "Chem Tech",
+    "desc": "Scientist, capable of dealing bursts of elemental damage to friend and foe alike.",
+    "mv": 3,
+    "jm": 3,
+    "str": 0,
+    "int": 5,
+    "end": 0,
+    "wil": 2,
+    "dex": 0,
+    "agi": 1,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Canes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 5,
+    "name": "Medic",
+    "act": "Medical Tech",
+    "desc": "A healer practiced in recovering injuries even in the midst of battle.",
+    "mv": 3,
+    "jm": 3,
+    "str": 1,
+    "int": 3,
+    "end": 0,
+    "wil": 2,
+    "dex": 1,
+    "agi": 1,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Daggers",
+      "Bags",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 6,
+    "name": "Monk",
+    "act": "Martial Arts",
+    "desc": "",
+    "mv": 3,
+    "jm": 4,
+    "str": 3,
+    "int": 0,
+    "end": 3,
+    "wil": -1,
+    "dex": 0,
+    "agi": 1,
+    "init": [
+      "Barehanded"
+    ],
+    "equip": [
+      "Clothes",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 7,
+    "name": "Mercenary",
+    "act": "",
+    "desc": "",
+    "mv": 4,
+    "jm": 4,
+    "str": 2,
+    "int": 1,
+    "end": 0,
+    "wil": -2,
+    "dex": 2,
+    "agi": 2,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Daggers",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 8,
+    "name": "Naturalist",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 1,
+    "int": 3,
+    "end": 0,
+    "wil": 3,
+    "dex": 0,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Canes",
+      "Books",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 9,
+    "name": "Counselor",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 1,
+    "int": 2,
+    "end": 0,
+    "wil": 4,
+    "dex": 0,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Canes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 10,
+    "name": "Outlander",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 3,
+    "int": 3,
+    "end": 1,
+    "wil": 0,
+    "dex": 0,
+    "agi": 1,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Swords",
+      "Axes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 11,
+    "name": "Knight",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 5,
+    "int": 0,
+    "end": 3,
+    "wil": 0,
+    "dex": 0,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Spears",
+      "Helms",
+      "Armor",
+      "Robes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 12,
+    "name": "Occultist",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 0,
+    "int": 3,
+    "end": 0,
+    "wil": 5,
+    "dex": 0,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Canes",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 13,
+    "name": "Tactician",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 1,
+    "int": 4,
+    "end": 0,
+    "wil": 0,
+    "dex": 2,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Daggers",
+      "Guns",
+      "Hats",
+      "Clothes",
+      "Robes",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 14,
+    "name": "Engineer",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 4,
+    "int": 2,
+    "end": 1,
+    "wil": 0,
+    "dex": 2,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Hammers",
+      "Katana",
+      "Helms",
+      "Armor",
+      "Robes",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 15,
+    "name": "Agent",
+    "act": "",
+    "desc": "",
+    "mv": 4,
+    "jm": 4,
+    "str": 3,
+    "int": 0,
+    "end": 0,
+    "wil": 0,
+    "dex": 2,
+    "agi": 5,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Canes",
+      "Books",
+      "Hats",
+      "Robes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 16,
+    "name": "Astrologian",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 0,
+    "int": 1,
+    "end": 1,
+    "wil": 1,
+    "dex": 0,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Daggers",
+      "Hammers",
+      "Katana",
+      "Hats",
+      "Slothes",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 17,
+    "name": "Performer",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 4,
+    "int": 2,
+    "end": 0,
+    "wil": 0,
+    "dex": 0,
+    "agi": 1,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Daggers",
+      "Cloth",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 18,
+    "name": "Analyst",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 0,
+    "int": 4,
+    "end": 0,
+    "wil": 2,
+    "dex": 1,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Instrument",
+      "Hats",
+      "Clothes",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "num": 19,
+    "name": "Paladin",
+    "act": "",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 5,
+    "int": 3,
+    "end": 3,
+    "wil": 4,
+    "dex": 1,
+    "agi": 0,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Sword",
+      "Spears",
+      "Hammers",
+      "Helms",
+      "Armor",
+      "Robes",
+      ""
+    ]
+  },
+  {
+    "num": 20,
+    "name": "Judge",
+    "act": "Sentence",
+    "desc": "",
+    "mv": 3,
+    "jm": 3,
+    "str": 4,
+    "int": 4,
+    "end": 0,
+    "wil": 3,
+    "dex": 3,
+    "agi": 2,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Sword",
+      "Axes",
+      "Guns",
+      "Helms",
+      "Armor",
+      "Robes",
+      ""
+    ]
+  },
+  {
+    "num": 21,
+    "name": "Drone",
+    "act": "",
+    "desc": "",
+    "mv": 4,
+    "jm": 4,
+    "str": 5,
+    "int": 0,
+    "end": 5,
+    "wil": 0,
+    "dex": 2,
+    "agi": 2,
+    "init": [
+      ""
+    ],
+    "equip": [
+      "Everything",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+]
