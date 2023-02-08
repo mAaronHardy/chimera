@@ -24,7 +24,7 @@
  },
   {
     "num": 1,
-    "name": "Petrified",
+    "name": "Stone",
     "job": "Courier",
     "type": "Action",
     "rng": "4",
@@ -37,7 +37,7 @@
     "pow": "1d2",
     "elem": "",
     "effect": "Knockback (50%)",
-    "desc": "Throw a Petrified to deal a small amount of damage. Has a chance of pushing the target.",
+    "desc": "Throw a stone to deal a small amount of damage. Has a chance of pushing the target.",
     "cost": 80,
     "tags": [
        "Physical",
@@ -2279,7 +2279,7 @@
   {
     "num": 99,
     "name": "Counter",
-    "job": "Monk",
+    "job": "Monk, Homunculus",
     "type": "Reaction",
     "rng": "",
     "area": "",
@@ -6970,7 +6970,7 @@
  },
   {
     "num": 301,
-    "name": "Loafe",
+    "name": "Loaf",
     "job": "Goblin",
     "type": "Action",
     "rng": "Self",
@@ -6983,7 +6983,7 @@
     "pow": "",
     "elem": "",
     "effect": "Adds: Fortify, Bolster",
-    "desc": "Attack the eyes, robbing the target of sight.",
+    "desc": "Take time to recuperate and strengthen defenses.",
     "cost": null,
     "tags": [
        "",
@@ -7063,7 +7063,7 @@
   {
     "num": 305,
     "name": "Kin Call",
-    "job": "Locust",
+    "job": "Locust, Sparrow",
     "type": "Action",
     "rng": "3",
     "area": "1",
@@ -7728,32 +7728,9 @@
     ]
  },
   {
-    "num": 334,
-    "name": "Counter",
-    "job": "Homunculus",
-    "type": "Reaction",
-    "rng": "",
-    "area": "",
-    "fp": null,
-    "target": "",
-    "trigger": "",
-    "attr": "",
-    "acc": "",
-    "pow": "",
-    "elem": "",
-    "effect": "",
-    "desc": "",
-    "cost": null,
-    "tags": [
-       "",
-       "",
-       ""
-    ]
- },
-  {
     "num": 335,
     "name": "Athletic",
-    "job": "Homunculus",
+    "job": "Outlander, Homunculus",
     "type": "Movement",
     "rng": "",
     "area": "",
@@ -7764,7 +7741,7 @@
     "acc": "",
     "pow": "",
     "elem": "",
-    "effect": "",
+    "effect": "Mv +1, Jm +1",
     "desc": "",
     "cost": null,
     "tags": [
@@ -9363,8 +9340,8 @@
   {
     "num": 404,
     "name": "Quill Barrage",
-    "job": "",
-    "type": "",
+    "job": "Sparrow",
+    "type": "Action",
     "rng": "",
     "area": "",
     "fp": null,

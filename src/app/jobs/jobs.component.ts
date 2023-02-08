@@ -31,7 +31,7 @@ export class JobsComponent {
   }
 
   getTech( job : any[] ) {
-    this.tech = this.techs.filter((item: any) => item.job == (job));
+    this.tech = this.techs.filter((item: any) => item.job.includes(job));
     this.action = this.tech.filter((item: any) => item.type == ('Action'));
     this.reaction = this.tech.filter((item: any) => item.type == ('Reaction'));
     this.support = this.tech.filter((item: any) => item.type == ('Support'));
