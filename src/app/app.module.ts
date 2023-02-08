@@ -12,6 +12,7 @@ import { TechTableComponent } from './components/tech/tech-table.component';
 import { TechSpecComponent } from './components/tech/tech-spec.component';
 import { TechOtherComponent } from './components/tech/tech-other.component';
 import { TechTagsComponent } from './components/tech/tech-tags.component';
+import { PromoComponent } from './components/promo.component';
 
 import { FooterComponent } from './components/footer.component';
 import { HomeComponent } from './home/home.component';
@@ -33,6 +34,7 @@ import { RulesComponent } from './rules/rules.component';
     TechSpecComponent,
     TechOtherComponent,
     TechTagsComponent,
+    PromoComponent,
 
     FooterComponent,
     HomeComponent,
