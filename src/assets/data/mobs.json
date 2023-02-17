@@ -1,678 +1,90 @@
 [
-  {
-    "num": 1,
-    "cat": 1,
-    "type": "A",
-    "name": "Goblin",
-    "act": "Goblin",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 2,
-    "int": 0,
-    "end": 2,
-    "wil": -3,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "Aquaphobia",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 2,
-    "cat": 1,
-    "type": "B",
-    "name": "Sparrow",
-    "act": "Sparrow",
-    "desc": "",
-    "mv": 6,
-    "jm": 5,
-    "str": 0,
-    "int": 2,
-    "end": -3,
-    "wil": 0,
-    "dex": 2,
-    "agi": 4,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 3,
-    "cat": 1,
-    "type": "C",
-    "name": "Locust",
-    "act": "Locust",
-    "desc": "",
-    "mv": 4,
-    "jm": 4,
-    "str": 3,
-    "int": 0,
-    "end": 4,
-    "wil": 3,
-    "dex": 0,
-    "agi": 2,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 4,
-    "cat": 1,
-    "type": "G",
-    "name": "Wisp",
-    "act": "Wisp",
-    "desc": "",
-    "mv": 4,
-    "jm": 4,
-    "str": 3,
-    "int": 0,
-    "end": 4,
-    "wil": 3,
-    "dex": 0,
-    "agi": 2,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 5,
-    "cat": 2,
-    "type": "A",
-    "name": "Whitetail",
-    "act": "Whitetail",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 3,
-    "int": 4,
-    "end": 4,
-    "wil": 0,
-    "dex": 0,
-    "agi": 1,
-    "init": [
-       "Immune Bolt",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 6,
-    "cat": 2,
-    "type": "B",
-    "name": "Dodo",
-    "act": "Dodo",
-    "desc": "A water foul more interested in foraging for food that fighting.",
-    "mv": 5,
-    "jm": 4,
-    "str": 2,
-    "int": 1,
-    "end": 0,
-    "wil": -2,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "Swim",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 7,
-    "cat": 2,
-    "type": "C",
-    "name": "Blight",
-    "act": "Blight",
-    "desc": "",
-    "mv": 5,
-    "jm": 5,
-    "str": 3,
-    "int": 1,
-    "end": 3,
-    "wil": 1,
-    "dex": 0,
-    "agi": 1,
-    "init": [
-       "Evasion",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 8,
-    "cat": 2,
-    "type": "D",
-    "name": "Lurker",
-    "act": "Lurker",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 1,
-    "int": 3,
-    "end": 3,
-    "wil": 4,
-    "dex": 1,
-    "agi": 2,
-    "init": [
-       "Attached",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 9,
-    "cat": 3,
-    "type": "A",
-    "name": "Hound",
-    "act": "Hound",
-    "desc": "",
-    "mv": 4,
-    "jm": 4,
-    "str": 4,
-    "int": 2,
-    "end": 2,
-    "wil": -1,
-    "dex": 2,
-    "agi": 2,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 10,
-    "cat": 3,
-    "type": "B",
-    "name": "Siren",
-    "act": "Siren",
-    "desc": "",
-    "mv": 4,
-    "jm": 5,
-    "str": 3,
-    "int": 4,
-    "end": 0,
-    "wil": 0,
-    "dex": 4,
-    "agi": 4,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 11,
-    "cat": 3,
-    "type": "C",
-    "name": "Beetle",
-    "act": "Beetle",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 3,
-    "int": 2,
-    "end": 3,
-    "wil": 0,
-    "dex": 2,
-    "agi": 0,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 12,
-    "cat": 3,
-    "type": "D",
-    "name": "Largemouth",
-    "act": "Largemouth",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 4,
-    "int": 1,
-    "end": 4,
-    "wil": 3,
-    "dex": 1,
-    "agi": 0,
-    "init": [
-       "Swim",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 13,
-    "cat": 3,
-    "type": "E",
-    "name": "Serpent",
-    "act": "Serpent",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 0,
-    "int": 0,
-    "end": 2,
-    "wil": 2,
-    "dex": 1,
-    "agi": 0,
-    "init": [
-       "Resist Fire",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 14,
-    "cat": 3,
-    "type": "F",
-    "name": "Morchella",
-    "act": "Morchella",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 4,
-    "int": 6,
-    "end": 4,
-    "wil": 0,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "Immune Poison",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 15,
-    "cat": 3,
-    "type": "G",
-    "name": "Homunculus",
-    "act": "Homunculus",
-    "desc": "",
-    "mv": 3,
-    "jm": 5,
-    "str": 1,
-    "int": 0,
-    "end": 0,
-    "wil": 0,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 16,
-    "cat": 4,
-    "type": "A",
-    "name": "Vixen",
-    "act": "Vixen",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 0,
-    "int": 2,
-    "end": 3,
-    "wil": 0,
-    "dex": 0,
-    "agi": 1,
-    "init": [
-       "Immune Fire",
-       "Aquaphobia",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 17,
-    "cat": 4,
-    "type": "A",
-    "name": "Nixie",
-    "act": "Nixie",
-    "desc": "",
-    "mv": 4,
-    "jm": 3,
-    "str": 3,
-    "int": 2,
-    "end": 3,
-    "wil": -1,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "Immune Cold",
-       "Swim",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 18,
-    "cat": 4,
-    "type": "F",
-    "name": "Dryad",
-    "act": "Dryad",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 2,
-    "int": 5,
-    "end": 2,
-    "wil": 5,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 19,
-    "cat": 5,
-    "type": "A",
-    "name": "Behemoth",
-    "act": "Behemoth",
-    "desc": "",
-    "mv": 4,
-    "jm": 3,
-    "str": 8,
-    "int": 4,
-    "end": 5,
-    "wil": 3,
-    "dex": 1,
-    "agi": 2,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 20,
-    "cat": 5,
-    "type": "B",
-    "name": "Strix",
-    "act": "Strix",
-    "desc": "",
-    "mv": 6,
-    "jm": 6,
-    "str": 5,
-    "int": 3,
-    "end": 3,
-    "wil": 0,
-    "dex": 1,
-    "agi": 3,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 21,
-    "cat": 5,
-    "type": "C",
-    "name": "Centipede",
-    "act": "Centipede",
-    "desc": "",
-    "mv": 4,
-    "jm": 3,
-    "str": 7,
-    "int": 4,
-    "end": 9,
-    "wil": 7,
-    "dex": 0,
-    "agi": 2,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 22,
-    "cat": 5,
-    "type": "D",
-    "name": "Rey",
-    "act": "Rey",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 6,
-    "int": 4,
-    "end": 4,
-    "wil": 0,
-    "dex": 0,
-    "agi": 1,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 23,
-    "cat": 5,
-    "type": "E",
-    "name": "Wyvern",
-    "act": "Wyvern",
-    "desc": "",
-    "mv": 4,
-    "jm": 3,
-    "str": 1,
-    "int": 2,
-    "end": 1,
-    "wil": 0,
-    "dex": 4,
-    "agi": 0,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 24,
-    "cat": 6,
-    "type": "E",
-    "name": "Salamander",
-    "act": "Salamander",
-    "desc": "",
-    "mv": 4,
-    "jm": 3,
-    "str": 1,
-    "int": 2,
-    "end": 2,
-    "wil": 3,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 25,
-    "cat": 6,
-    "type": "E",
-    "name": "Fiend",
-    "act": "Fiend",
-    "desc": "",
-    "mv": 4,
-    "jm": 4,
-    "str": 7,
-    "int": 1,
-    "end": 4,
-    "wil": 0,
-    "dex": 2,
-    "agi": 2,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- },
-  {
-    "num": 26,
-    "cat": 7,
-    "type": "G",
-    "name": "Golem",
-    "act": "Golem",
-    "desc": "",
-    "mv": 3,
-    "jm": 3,
-    "str": 8,
-    "int": 4,
-    "end": 2,
-    "wil": 0,
-    "dex": 0,
-    "agi": 0,
-    "init": [
-       "",
-       "",
-       "",
-       "",
-       ""
-    ],
-    "equip": [
-       ""
-    ]
- }
+   {
+     "name": "Humanoid",
+     "mv": 3,
+     "jm": 3,
+     "str": 10,
+     "int": 10,
+     "end": 10,
+     "wil": 10,
+     "dex": 10,
+     "agi": 10,
+     "type": "Humanoid",
+     "init": [
+        "Worker",
+        "",
+        "",
+        ""
+     ],
+     "equip": [
+        ""
+     ],
+     "desc": "Humanoids posess a variety of skills making them ideal for many different jobs."
+  },
+   {
+     "name": "Goblin",
+     "mv": 3,
+     "jm": 3,
+     "str": 12,
+     "int": 9,
+     "end": 14,
+     "wil": 7,
+     "dex": 10,
+     "agi": 10,
+     "type": "Beast",
+     "init": [
+        "",
+        "",
+        "",
+        ""
+     ],
+     "equip": [
+        ""
+     ],
+     "desc": ""
+  },
+   {
+     "name": "Locust",
+     "mv": 3,
+     "jm": 4,
+     "str": 8,
+     "int": 7,
+     "end": 10,
+     "wil": 9,
+     "dex": 13,
+     "agi": 10,
+     "type": "Insect",
+     "init": [
+        "Aquaphobia",
+        "",
+        "",
+        ""
+     ],
+     "equip": [
+        ""
+     ],
+     "desc": ""
+  },
+   {
+     "name": "Dodo",
+     "mv": 5,
+     "jm": 4,
+     "str": 10,
+     "int": 8,
+     "end": 10,
+     "wil": 8,
+     "dex": 10,
+     "agi": 10,
+     "type": "Flying",
+     "init": [
+        "Swim",
+        "",
+        "",
+        ""
+     ],
+     "equip": [
+        ""
+     ],
+     "desc": "Quick water foul that spends most of its time foraging for food."
+  }
 ]

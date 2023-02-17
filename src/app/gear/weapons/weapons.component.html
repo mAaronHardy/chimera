@@ -6,29 +6,30 @@
                 <select id="type" [(ngModel)]="type" (change)="filter()">
                     <option ngValue="All">- All -</option>
                     <option ngValue="Dagger">Dagger</option>
-                    <option ngValue="Sword">Sword</option>
-                    <option ngValue="Axe">Axe</option>
-                    <option ngValue="Bow">Bow</option>
-                    <option ngValue="Crossbow">Crossbow</option>
-                    <option ngValue="Cane">Cane</option>
-                    <option ngValue="Katana">Katana</option>
                     <option ngValue="Hammer">Hammer</option>
-                    <option ngValue="Gun">Gun</option>
-                    <option ngValue="Book">Book</option>
+                    <option ngValue="Axe">Axe</option>
+                    <option ngValue="Sword">Sword</option>
+                    <option ngValue="Spear">Spear</option>
+                    <option ngValue="Crossbow">Crossbow</option>
+                    <option ngValue="Bow">Bow</option>
+                    <option ngValue="Staff">Staff</option>
+                    <!-- <option ngValue="Katana">Katana</option> -->
+                    <!-- <option ngValue="Book">Book</option> -->
                     <option ngValue="Bag">Bag</option>
-                    <option ngValue="Cloth">Cloth</option>
+                    <option ngValue="Gun">Gun</option>
+                    <option ngValue="Natural">Natural</option>
+                    <!-- <option ngValue="Cloth">Cloth</option> -->
                     <option ngValue="Shield">Shield</option>
                 </select>
             </label>
         </p>
-        <p class="col xs-50 txt-right p">
+        <!-- <p class="col xs-50 txt-right p">
             <label>
                 <span>Rare Weapons: </span>
                 <input type="checkbox" [(ngModel)]="rare" (change)="filter()">
             </label>
-        </p>
+        </p> -->
     </div>
-    <p class="p" *ngIf="type != 'All'">{{type}} Damage: {{weaponFormula()}}</p>
     <table class="table-dark">
         <tr>
             <td></td>

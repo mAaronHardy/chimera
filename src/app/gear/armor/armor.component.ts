@@ -9,24 +9,23 @@ export class ArmorComponent {
   equip :any[] = [];
   list : any[] = [];
   type : string = 'All';
-  rare = false;
 
-  filterRare() {
-      this.rare ? this.list = this.equip : this.list = this.equip.filter((item: any) => item.rare == (false));
+  filterRready() {
+      this.list = this.equip.filter((item: any) => item.ready == (true));
   }
 
   filterType() {
     if ( this.type == 'All' ) {
       this.list = this.list;
     } else if ( this.type == 'Accessory' ) {
-      this.list = this.list.filter((item: any) => item.type == ('Cloak') || item.type == ('Gloves') || item.type == ('Shoes') || item.type == ('Amulet') || item.type == ('Ring'));
+      this.list = this.list.filter((item: any) => item.type == ('Hat') || item.type == ('Cloak') || item.type == ('Gloves') || item.type == ('Shoes') || item.type == ('Amulet') || item.type == ('Ring'));
     } else {
       this.list = this.list.filter((item: any) => item.type == (this.type));
     }
   }
 
   filter() {
-      this.filterRare();
+      this.filterRready();
       this.filterType();
   }
 
@@ -43,10 +42,10 @@ export class ArmorComponent {
     switch(type) {
       case "Hat":
         return "👒";
-      case "Helm":
-        return "🪖";
-      case "Clothes":
+      case "Clothing":
         return "👕";
+      case "Hide":
+        return "🐢";
       case "Armor":
         return "🧥";
       case "Robe":
@@ -71,7 +70,7 @@ export class ArmorComponent {
   ngOnInit(): void {
     this.http.get('assets/data/equip.json').subscribe((data : any) => { this.equip = data });
     this.http.get('assets/data/equip.json').subscribe((data : any) => {
-      this.list = data.filter((item: any) => item.rare == (false));
+      this.list = data.filter((item: any) => item.ready == (true));
     });
   }
 }

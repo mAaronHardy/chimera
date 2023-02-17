@@ -11,20 +11,12 @@ export class ItemsComponent {
   type : string = 'All';
   rare = false;
 
-  filterRare() {
-    this.rare ? this.list = this.items : this.list = this.items.filter((item: any) => item.rare == (false));
-  }
-
-filterType() {
+  filter() {
     if ( this.type == 'All' ) {
+      this.list = this.items;
     } else {
       this.list = this.items.filter((item: any) => item.type == (this.type));
     }
-  }
-
-  filter() {
-    this.filterRare();
-    this.filterType();
   }
 
   sortName() {
@@ -54,7 +46,7 @@ filterType() {
   ngOnInit(): void {
     this.http.get('assets/data/items.json').subscribe((data : any) => { this.items = data });
     this.http.get('assets/data/items.json').subscribe((data : any) => {
-      this.list = data.filter((item: any) => item.rare == (false));
+      this.list = data.filter((item: any) => item.ready == (true));
     });
   }
 }

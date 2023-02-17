@@ -26,6 +26,7 @@ import { Router } from '@angular/router';
       .menu-button {
         background: none;
         border: none;
+        color: #333333;
         cursor: pointer;
         font-size: 1rem;
         font-weight: bold;
@@ -45,6 +46,7 @@ import { Router } from '@angular/router';
       .nav-list {
         background: #f7f6f4;
         display: none;
+        list-style: none;
         margin: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -98,8 +100,14 @@ import { Router } from '@angular/router';
     }
     </style>
     <nav class="nav-menu" [ngClass]="{show}">
-      <a routerLink="/" class="home-link">👹Chimera</a>
-      <button class="menu-button" (click)="toggle()">{{show ? "✕" : "☰"}}</button>
+      <div class="grid">
+        <div class="col xs-50">
+          <a routerLink="/" class="home-link">👹Chimera</a>
+        </div>
+        <div class="col xs-50">
+          <button class="menu-button txt-right" (click)="toggle()">{{show ? "✕" : "☰"}}</button>
+        </div>
+      </div>
       <ul class="nav-list">
         <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
         <li class="nav-item"><a routerLink="/jobs" class="nav-link">Jobs</a></li>

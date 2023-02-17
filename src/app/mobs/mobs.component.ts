@@ -11,11 +11,10 @@ export class MobsComponent {
   mobs : any[] = [];
   techs : any[] = [];
   
-  tech : any[] = [];
-    action : any[] = [];
-    reaction : any[] = [];
-    support : any[] = [];
-    movement : any[] = [];
+  action : any[] = [];
+  reaction : any[] = [];
+  passive : any[] = [];
+  movement : any[] = [];
 
   scroll(link : string) {
     document.getElementById(link)!.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -30,18 +29,17 @@ export class MobsComponent {
     }
   }
 
-  getTech( job : any[] ) {
-    this.tech = this.techs.filter((item: any) => item.job.includes(job));
-    this.action = this.tech.filter((item: any) => item.type == ('Action'));
-    this.reaction = this.tech.filter((item: any) => item.type == ('Reaction'));
-    this.support = this.tech.filter((item: any) => item.type == ('Support'));
-    this.movement = this.tech.filter((item: any) => item.type == ('Movement'));
-    return this.tech
+  getAction( job : string ) {
+    return this.action.filter((item: any) => item.origin == (job));
   }
-
-  checkTech( abil : string ) {
-    let action : any[] = this.tech.filter((item: any) => item.type == (abil));
-    return action.length > 0;
+  getReaction( job : string ) {
+    return this.reaction.filter((item: any) => item.origin == (job));
+  }
+  getPassive( job : string ) {
+    return this.passive.filter((item: any) => item.origin == (job));
+  }
+  getMovement( job : string ) {
+    return this.movement.filter((item: any) => item.origin == (job));
   }
   
   constructor( private http: HttpClient ) { }
@@ -50,7 +48,10 @@ export class MobsComponent {
     window.scroll({top: 0})
     
     this.http.get('assets/data/mobs.json').subscribe((data : any) => { this.mobs = data });
-    this.http.get('assets/data/tech.json').subscribe((data : any) => { this.techs = data });
+    this.http.get('assets/data/actions.json').subscribe((data : any) => { this.action = data });
+    this.http.get('assets/data/reactions.json').subscribe((data : any) => { this.reaction = data });
+    this.http.get('assets/data/passive.json').subscribe((data : any) => { this.passive = data });
+    this.http.get('assets/data/movement.json').subscribe((data : any) => { this.movement = data });
     
     for (let i = 0; i < this.mobs.length; i++) {
       this.show.push (false)

@@ -7,10 +7,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav.component';
-import { TechPhysComponent } from './components/tech/tech-phys.component';
 import { TechTableComponent } from './components/tech/tech-table.component';
-import { TechSpecComponent } from './components/tech/tech-spec.component';
-import { TechOtherComponent } from './components/tech/tech-other.component';
+import { TechActionComponent } from './components/tech/tech-action.component';
 import { TechTagsComponent } from './components/tech/tech-tags.component';
 import { PromoComponent } from './components/promo.component';
 
@@ -24,17 +22,17 @@ import { ArmorComponent } from './gear/armor/armor.component';
 import { ItemsComponent } from './gear/items/items.component';
 import { CreateComponent } from './create/create.component';
 import { RulesComponent } from './rules/rules.component';
+import { ModPipe } from './mod.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     TechTableComponent,
-    TechPhysComponent,
-    TechSpecComponent,
-    TechOtherComponent,
+    TechActionComponent,
     TechTagsComponent,
     PromoComponent,
+    ModPipe,
 
     FooterComponent,
     HomeComponent,

@@ -9,48 +9,66 @@
                 <h2>{{job.name}}</h2>
                 <p>{{job.desc}}</p>
 
-                <h3>Base Stats</h3>
-                <div class="grid txt-center">
-                    <div class="col xs-25">
-                        <p>Mv <strong>{{job.mv}}</strong></p>
-                        <p>Jm <strong>{{job.jm}}</strong></p>
-                    </div>
-                    <div class="col xs-25">
-                        <p>Str <strong>{{job.str}}</strong></p>
-                        <p>Int <strong>{{job.int}}</strong></p>
-                    </div>
-                    <div class="col xs-25">
-                        <p>End <strong>{{job.end}}</strong></p>
-                        <p>Wil <strong>{{job.wil}}</strong></p>
-                    </div>
-                    <div class="col xs-25">
-                        <p>Dex <strong>{{job.dex}}</strong></p>
-                        <p>Agi <strong>{{job.agi}}</strong></p>
-                    </div>
-                </div>
+                <p>
+                    <span *ngIf="job.mv">Mv: <strong><span *ngIf="job.mv > -1">+</span>{{job.mv}} </strong></span>
+                    <span *ngIf="job.jm">Jm: <strong><span *ngIf="job.jm > -1">+</span>{{job.jm}} </strong></span>
+                    <span *ngIf="job.str">Str: <strong><span *ngIf="job.str > -1">+</span>{{job.str}} </strong></span>
+                    <span *ngIf="job.int">Int: <strong><span *ngIf="job.int > -1">+</span>{{job.int}} </strong></span>
+                    <span *ngIf="job.end">End: <strong><span *ngIf="job.end > -1">+</span>{{job.end}} </strong></span>
+                    <span *ngIf="job.wil">Wil: <strong><span *ngIf="job.wil > -1">+</span>{{job.wil}} </strong></span>
+                    <span *ngIf="job.dex">Dex: <strong><span *ngIf="job.dex > -1">+</span>{{job.dex}} </strong></span>
+                    <span *ngIf="job.agi">Agi: <strong><span *ngIf="job.agi > -1">+</span>{{job.agi}} </strong></span>
+                </p>
 
                 <p>Equip: <span *ngFor="let equ of job.equip; let i = index;"><span *ngIf="i > 0 && equ != ''">, </span><strong>{{equ}}</strong></span></p>
                 <p *ngIf="job.init[0] != ''">Starting Tech: <span *ngFor="let ini of job.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
 
                 <h3>{{job.act}}</h3>
-                <div class="table-dark" *ngIf="getTech(job.name).length > 0">
-                    <tech-table [tech]="action" cat="Action" *ngIf="action.length > 0"></tech-table>
-                    <tech-table [tech]="reaction" cat="Reaction" *ngIf="reaction.length > 0"></tech-table>
-                    <tech-table [tech]="support" cat="Support" *ngIf="support.length > 0"></tech-table>
-                    <tech-table [tech]="movement" cat="Movement" *ngIf="movement.length > 0"></tech-table>
+                <div class="table-dark">
+                    <tech-table [tech]="getAction(job.name)" cat="Action" *ngIf="getAction(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getReaction(job.name)" cat="Reaction" *ngIf="getReaction(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getPassive(job.name)" cat="Passive" *ngIf="getPassive(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getMovement(job.name)" cat="Movement" *ngIf="getMovement(job.name).length > 0"></tech-table>
                 </div>
 
-                <ng-container *ngFor="let tec of tech">
-                    <div class="action-details">
-                        <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                        <strong class="top-corner">{{tec.type}}</strong>
-                        <p>{{tec.desc}}</p>
-                        <tech-phys *ngIf="tec.tags.includes('Physical')" [tec]="tec"></tech-phys>
-                        <tech-spec *ngIf="tec.tags.includes('Special')" [tec]="tec"></tech-spec>
-                        <tech-other *ngIf="!tec.tags.includes('Physical') && !tec.tags.includes('Special')" [tec]="tec"></tech-other>
-                        <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
+                <div class="action-details" *ngFor="let tec of getAction(job.name)">
+                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                    <div class="top-corner">
+                        <strong>Action</strong>
+                        <p class="txt-right">{{tec.cost}} JP</p>
                     </div>
-                </ng-container>
+                    <p>{{tec.desc}}</p>
+                    <tech-action [tec]="tec"></tech-action>
+                    <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
+                </div>
+                <div class="action-details" *ngFor="let tec of getReaction(job.name)">
+                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                    <div class="top-corner">
+                        <strong>Reaction</strong>
+                        <p class="txt-right">{{tec.cost}} JP</p>
+                    </div>
+                    <p>{{tec.desc}}</p>
+                    <p>Trigger: {{tec.trigger}}</p>
+                    <p>{{tec.effect}}</p>
+                </div>
+                <div class="action-details" *ngFor="let tec of getPassive(job.name)">
+                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                    <div class="top-corner">
+                        <strong>Passive</strong>
+                        <p class="txt-right">{{tec.cost}} JP</p>
+                    </div>
+                    <p>{{tec.desc}}</p>
+                    <p>{{tec.effect}}</p>
+                </div>
+                <div class="action-details" *ngFor="let tec of getMovement(job.name)">
+                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
+                    <div class="top-corner">
+                        <strong>Movement</strong>
+                        <p class="txt-right">{{tec.cost}} JP</p>
+                    </div>
+                    <p>{{tec.desc}}</p>
+                    <p>{{tec.effect}}</p>
+                </div>
             </div>
         </div>
     </ng-container>
