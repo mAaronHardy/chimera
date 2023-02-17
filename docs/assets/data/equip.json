@@ -1,405 +1,296 @@
 [
   {
-    "name": "Leather Cap",
-    "type": "Hat",
-    "rare": false,
-    "hp": 8,
-    "cost": 50
-  },
-  {
-    "name": "Feather Hat",
-    "type": "Hat",
-    "rare": false,
-    "hp": 16,
-    "fp": 5,
-    "cost": 100
-  },
-  {
-    "name": "Red Hood",
-    "type": "Hat",
-    "rare": false,
-    "effect": "Eva +2, Cannot Equip Cloaks",
-    "hp": 24,
-    "fp": 8,
-    "cost": 300
-  },
-  {
-    "name": "Headband",
-    "type": "Hat",
-    "rare": false,
-    "effect": "Str +1",
-    "hp": 32,
-    "str": 1,
-    "cost": 450
-  },
-  {
-    "name": "Sun Hat",
-    "type": "Hat",
-    "rare": true,
-    "effect": "Int +1",
-    "hp": 25,
-    "fp": 25,
-    "int": 1,
-    "cost": 600
-  },
-  {
-    "name": "Black Cowl",
-    "type": "Hat"
-  },
-  {
-    "name": "Leather Helm",
-    "type": "Helm"
-  },
-  {
-    "name": "Kettle Helm",
-    "type": "Helm",
-    "rare": false,
-    "hp": 25,
-    "cost": 150
-  },
-  {
-    "name": "Kabuto",
-    "type": "Helm",
-    "rare": false,
-    "effect": "Eva +1",
-    "hp": 35,
-    "eva": 1,
-    "cost": 250
-  },
-  {
-    "name": "Ceramic Helm",
-    "type": "Helm"
-  },
-  {
-    "name": "Plate Helm",
-    "type": "Helm",
-    "rare": false,
-    "effect": "Blk +1",
-    "hp": 50,
-    "blk": 1,
-    "cost": 600
-  },
-  {
-    "name": "Ribbon",
-    "type": "Decoration",
-    "effect": "Immune"
-  },
-  {
-    "name": "Hairpin",
-    "type": "Decoration",
-    "effect": "Immune: Amnesia"
-  },
-  {
     "name": "Clothing",
-    "type": "Clothes",
-    "rare": false,
-    "hp": 10,
-    "cost": 50
+    "type": "Clothing",
+    "blk": 2,
+    "eva": null,
+    "sav": null,
+    "effect": "",
+    "cost": 1,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
-    "name": "Leather Jacket",
-    "type": "Clothes",
-    "rare": false,
-    "hp": 18,
-    "cost": 100
-  },
-  {
-    "name": "Scholar Attire",
-    "type": "Clothes",
-    "rare": false,
-    "hp": 25,
-    "fp": 15,
-    "cost": 250
-  },
-  {
-    "name": "Hide Armor",
-    "type": "Clothes",
-    "rare": false,
-    "hp": 35,
-    "cost": 250
+    "name": "Combat Garb",
+    "type": "Clothing",
+    "blk": 3,
+    "eva": null,
+    "sav": null,
+    "effect": "Str +1",
+    "cost": 40,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
     "name": "Brigandine",
-    "type": "Clothes",
-    "rare": false,
-    "hp": 50,
-    "cost": 450
-  },
-  {
-    "name": "Power Gi",
-    "type": "Clothes",
-    "rare": false,
-    "effect": "Str +2",
-    "hp": 60,
-    "str": 2,
-    "cost": 600
-  },
-  {
-    "name": "Combat Jumper",
-    "type": "Clothes",
-    "rare": false,
-    "effect": "Str +1",
-    "hp": 90,
-    "str": 1,
-    "cost": 1200
-  },
-  {
-    "name": "Sneaking Suit",
-    "type": "Clothes",
-    "effect": "Stealth"
+    "type": "Clothing",
+    "blk": 5,
+    "eva": null,
+    "sav": null,
+    "effect": "",
+    "cost": 75,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
     "name": "Leather Armor",
-    "type": "Armor"
+    "type": "Armor",
+    "blk": 4,
+    "eva": null,
+    "sav": null,
+    "effect": "",
+    "cost": 10,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
     "name": "Breastplate",
     "type": "Armor",
-    "rare": false,
-    "hp": 30,
-    "cost": 150
-  },
-  {
-    "name": "Scale Armor",
-    "type": "Armor",
-    "rare": false,
-    "hp": 50,
-    "cost": 300
+    "blk": 6,
+    "eva": -2,
+    "sav": null,
+    "effect": "",
+    "cost": 180,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
     "name": "Samurai Armor",
     "type": "Armor",
-    "rare": false,
-    "effect": "Eva +1",
-    "hp": 75,
-    "eva": 1,
-    "cost": 450
+    "blk": 7,
+    "eva": -2,
+    "sav": null,
+    "effect": "",
+    "cost": 250,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": false
   },
   {
-    "name": "Ceramic Armor",
-    "type": "Armor"
-  },
-  {
-    "name": "Plate Armor",
+    "name": "Splint Armor",
     "type": "Armor",
-    "rare": false,
-    "effect": "Blk +1",
-    "hp": 100,
+    "blk": 8,
+    "eva": -4,
+    "sav": null,
+    "effect": "",
+    "cost": 200,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
+  },
+  {
+    "name": "Full Plate",
+    "type": "Armor",
+    "blk": 9,
+    "eva": -6,
+    "sav": null,
+    "effect": "",
+    "cost": 1500,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
+  },
+  {
+    "name": "Scholar Clothes",
+    "type": "Robe",
     "blk": 1,
-    "cost": 1000
+    "eva": 2,
+    "sav": null,
+    "effect": "Int +1",
+    "cost": 50,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
-    "name": "Gold Plate",
-    "type": "Armor/Hide",
-    "effect": "Relentless"
-  },
-  {
-    "name": "Linen Robe",
+    "name": "Lab Gown",
     "type": "Robe",
-    "rare": false,
-    "hp": 10,
-    "fp": 10,
-    "cost": 100
-  },
-  {
-    "name": "Medical Garb",
-    "type": "Robe",
-    "rare": false,
-    "hp": 20,
-    "fp": 20,
-    "cost": 250
+    "blk": 1,
+    "eva": 2,
+    "sav": null,
+    "effect": "Int +2",
+    "cost": 150,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
     "name": "Court Dress",
     "type": "Robe",
-    "rare": false,
-    "effect": "Int +2",
-    "hp": 20,
-    "fp": 25,
-    "int": 2,
-    "cost": 450
-  },
-  {
-    "name": "Attendant Gown",
-    "type": "Robe",
-    "rare": false,
-    "hp": 30,
-    "fp": 20,
-    "cost": 450
-  },
-  {
-    "name": "Analyst Suit",
-    "type": "Robe",
-    "rare": false,
-    "hp": 40,
-    "fp": 25,
-    "cost": 600
-  },
-  {
-    "name": "Lordly Robe",
-    "type": "Robe",
-    "rare": true,
-    "hp": 60,
-    "fp": 30,
-    "cost": 1000
-  },
-  {
-    "name": "Travel Cape",
-    "type": "Cloak",
-    "rare": false,
-    "effect": "Eva +2",
+    "blk": 1,
     "eva": 2,
-    "cost": 50
+    "sav": null,
+    "effect": "Int +3",
+    "cost": 600,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": false
   },
   {
-    "name": "Ornate Shawl",
-    "type": "Cloak",
-    "rare": false,
-    "effect": "Eva +4",
-    "eva": 4,
-    "int": 1,
-    "cost": 200
-  },
-  {
-    "name": "Great Cloak",
-    "type": "Cloak",
-    "effect": "Eva +6"
-  },
-  {
-    "name": "Feather Mantle",
-    "type": "Cloak",
-    "effect": "Eva +8"
-  },
-  {
-    "name": "Ghillie Mantle",
-    "type": "Cloak",
-    "effect": "Stealth"
+  "name": "Hide Armor",
+  "type": "Hide",
+  "blk": 3,
+  "eva": null,
+  "sav": null,
+  "effect": "",
+  "cost": 15,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Chitin Armor",
+  "type": "Hide",
+  "blk": 5,
+  "eva": null,
+  "sav": null,
+  "effect": "",
+  "cost": 50,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Scale Armor",
+  "type": "Hide",
+  "blk": 7,
+  "eva": -2,
+  "sav": null,
+  "effect": "",
+  "cost": 120,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Huntsman",
+  "type": "Hat",
+  "blk": null,
+  "eva": null,
+  "sav": null,
+  "effect": "Dex +1",
+  "cost": 10,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Kettle Helm",
+  "type": "Hat",
+  "blk": 1,
+  "eva": null,
+  "sav": null,
+  "effect": "",
+  "cost": 25,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Traveler Cloak",
+  "type": "Cloak",
+  "blk": null,
+  "eva": 2,
+  "sav": 2,
+  "effect": "",
+  "cost": 10,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Ornate Shawl",
+  "type": "Cloak",
+  "blk": null,
+  "eva": 4,
+  "sav": 4,
+  "effect": "",
+  "cost": 800,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": true
+},
+{
+  "name": "Great Cloak",
+  "type": "Cloak",
+  "blk": null,
+  "eva": 6,
+  "sav": 6,
+  "effect": "",
+  "cost": 1200,
+  "tag": [
+      null,
+      ""
+  ],
+  "ready": false
+},
+{
+    "name": "Travel Boots",
+    "type": "Shoes",
+    "blk": null,
+    "eva": null,
+    "sav": null,
+    "effect": "Mv +1",
+    "cost": 50,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   },
   {
     "name": "Work Gloves",
     "type": "Gloves",
-    "rare": false,
+    "blk": null,
+    "eva": null,
+    "sav": null,
     "effect": "Str +1",
-    "str": 1,
-    "cost": 500
-  },
-  {
-    "name": "Medical Gloves",
-    "type": "Gloves",
-    "rare": true,
-    "effect": "Str +1, Int +1",
-    "str": 1,
-    "int": 1,
-    "cost": 1000
-  },
-  {
-    "name": "Heavy Bracers",
-    "type": "Gloves",
-    "rare": true,
-    "effect": "Str +2",
-    "str": 2,
-    "cost": 2000
-  },
-  {
-    "name": "Work Boots",
-    "type": "Shoes",
-    "rare": false,
-    "effect": "Mv +1",
-    "mv": 1,
-    "cost": 100
-  },
-  {
-    "name": "Hiking Boots",
-    "type": "Shoes",
-    "rare": false,
-    "effect": "Jm +1",
-    "jm": 1,
-    "cost": 120
-  },
-  {
-    "name": "Wading Boots",
-    "type": "Shoes",
-    "rare": false,
-    "effect": "Immune: Bolt, Immobile"
-  },
-  {
-    "name": "Dance Shoes",
-    "type": "Shoes",
-    "effect": "Mv +1, Agi +1"
-  },
-  {
-    "name": "Wingtip Shoes",
-    "type": "Shoes",
-    "effect": "Float, Int +1"
-  },
-  {
-    "name": "Mind Ring",
-    "type": "Ring",
-    "rare": true,
-    "effect": "Immune: Amnesia, Charm, Vampire"
-  },
-  {
-    "name": "Body Ring",
-    "type": "Ring",
-    "rare": true,
-    "effect": "Relentless"
-  },
-  {
-    "name": "Guardian Ring",
-    "effect": "Immune: Sleep, Doom"
-  },
-  {
-    "name": "Traveler's Amulet",
-    "type": "Amulet",
-    "effect": "Immune: Immobile, Disabled"
-  },
-  {
-    "name": "Keepsake",
-    "type": "Amulet",
-    "effect": "Immune: Charm, Vampire, Toad"
-  },
-  {
-    "name": "Chaplet",
-    "type": "Hat",
-    "effect": "Str & Int +1"
-  },
-  {
-    "name": "Black Mask",
-    "type": "Face",
-    "effect": "Imm: Poison"
-  },
-  {
-    "name": "Spectacles",
-    "type": "Face",
-    "effect": "Int & Dex +1"
-  },
-  {
-    "name": "Hunter Hat",
-    "type": "Hat",
-    "effect": "Dex +2"
-  },
-  {
-    "name": "Focus Helm",
-    "type": "Helm"
-  },
-  {
-    "name": "Prosthesis",
-    "type": "?"
-  },
-  {
-    "name": "Beast Heart",
-    "type": "?"
-  },
-  {
-    "name": "Symbiote",
-    "type": "?"
-  },
-  {
-    "name": "Vibrant Retina",
-    "type": "?"
-  },
-  {
-    "name": "Components",
-    "type": "?"
+    "cost": 25,
+    "tag": [
+      null,
+      ""
+    ],
+    "ready": true
   }
 ]

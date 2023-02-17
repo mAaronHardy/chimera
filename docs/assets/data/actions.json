@@ -1,0 +1,1442 @@
+[
+   {
+     "name": "Tackle",
+     "origin": "Courier",
+     "type": "Attack",
+     "fp": null,
+     "rng": "1v2",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "1d6",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Push 1",
+     "cost": 80,
+     "ready": true,
+     "tags": [
+        "Barehanded",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Stone",
+     "origin": "Courier",
+     "type": "Attack",
+     "fp": null,
+     "rng": "4",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "1d4",
+     "dmg": "",
+     "save": [
+        5,
+        "End"
+     ],
+     "effect": "Push 1",
+     "cost": 90,
+     "ready": true,
+     "tags": [
+        "Barehanded",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "First Aid",
+     "origin": "Courier",
+     "type": "Support",
+     "fp": null,
+     "rng": "1v2",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Removes: Blind, Disabled, Immobile, Poison",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Hustle",
+     "origin": "Courier",
+     "type": "Support",
+     "fp": null,
+     "rng": "3",
+     "area": "1",
+     "target": "Any",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Agi +1",
+     "cost": 300,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Defend",
+     "origin": "Courier",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Blk & Eva +5 (for 1 turn)",
+     "cost": 50,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Wait",
+     "origin": "Courier",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Delay turn",
+     "cost": 0,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Dash",
+     "origin": "Courier",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Mv ×2 (for 1 turn)",
+     "cost": 0,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Retreat",
+     "origin": "Courier",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Immune: Opportunity (for 1 turn)",
+     "cost": 0,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Item",
+     "origin": "Artisan",
+     "type": "Support",
+     "fp": null,
+     "rng": "1",
+     "area": "1v2",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Use an Item",
+     "cost": 0,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Reequip",
+     "origin": "Artisan",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Change one equipment",
+     "cost": 0,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Reassign",
+     "origin": "Artisan",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Change one reaction, support, or movement technique",
+     "cost": null,
+     "ready": false,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Focus",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "1/2 Wpn",
+     "dmg": "Focus",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 250,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Strength",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "Wil"
+     ],
+     "effect": "Str -1",
+     "cost": 250,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Mind",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "Wil"
+     ],
+     "effect": "Int -1",
+     "cost": 250,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Aim",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "Wil"
+     ],
+     "effect": "Dex -1",
+     "cost": 250,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Stride",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "Wil"
+     ],
+     "effect": "Agi -1",
+     "cost": 250,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Shield",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "Dex"
+     ],
+     "effect": "Break Shield",
+     "cost": 300,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Weapon",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        "Dex"
+     ],
+     "effect": "Break Weapon",
+     "cost": 400,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Break Armor",
+     "origin": "Fighter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        "Dex"
+     ],
+     "effect": "Break Armor",
+     "cost": 400,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Aimed Shot",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "1/2 Wpn",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Target Blk & Eva -5 (for this attack)",
+     "cost": 100,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Critical Shot",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "Wpn + 5",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Target Blk & Eva +10 (for this attack)",
+     "cost": 300,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Poison Shot",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Poison",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Leg Shot",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Immobile",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Arm Shot",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Disabled",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Head Shot",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Amnesia",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Burial",
+     "origin": "Hunter",
+     "type": "Attack",
+     "fp": null,
+     "rng": "Wpn",
+     "area": "1",
+     "target": "Undead",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        15,
+        "End"
+     ],
+     "effect": "Adds: Dying",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Fire",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 6,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "2d6",
+     "dmg": "Fire",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 50,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Cold",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 6,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "2d6",
+     "dmg": "Cold",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 50,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Bolt",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 6,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "2d6",
+     "dmg": "Bolt",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 50,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Mega Fire",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 12,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "4d6",
+     "dmg": "Fire",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Mega Cold",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 12,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "4d6",
+     "dmg": "Cold",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Mega Bolt",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 12,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "4d6",
+     "dmg": "Bolt",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Poison",
+     "origin": "Chemist",
+     "type": "Status",
+     "fp": 12,
+     "rng": "4",
+     "area": "2v0",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Poison",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Toad",
+     "origin": "Chemist",
+     "type": "Status",
+     "fp": 12,
+     "rng": "3",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        "End"
+     ],
+     "effect": "Adds: Toad",
+     "cost": 500,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Death",
+     "origin": "Chemist",
+     "type": "Status",
+     "fp": 24,
+     "rng": "4",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        "End"
+     ],
+     "effect": "Adds: Dying",
+     "cost": 600,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Flare",
+     "origin": "Chemist",
+     "type": "Special",
+     "fp": 60,
+     "rng": "5",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "8d6",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 1000,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Heal",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 5,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "1d6",
+     "dmg": "Healing",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 50,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Mega Heal",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 10,
+     "rng": "4",
+     "area": "2v1",
+     "target": "",
+     "attr": "Int",
+     "pow": "2d6",
+     "dmg": "Healing",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 180,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Raise",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 10,
+     "rng": "4",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        ""
+     ],
+     "effect": "Removes: Dying, Restore: 1/2 Max Hp",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Relentless",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 15,
+     "rng": "4",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        ""
+     ],
+     "effect": "Adds: Relentless",
+     "cost": 1000,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Regen",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 5,
+     "rng": "4",
+     "area": "2v0",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        ""
+     ],
+     "effect": "Adds: Regen",
+     "cost": 350,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Fortify",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 5,
+     "rng": "3",
+     "area": "2v0",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        ""
+     ],
+     "effect": "Adds: Fortify",
+     "cost": 70,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Bolster",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 5,
+     "rng": "3",
+     "area": "2v0",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        ""
+     ],
+     "effect": "Adds: Bolster",
+     "cost": 70,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Bulwark",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 25,
+     "rng": "3",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        ""
+     ],
+     "effect": "Adds: Fortify & Bolster",
+     "cost": 400,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Cure",
+     "origin": "Medic",
+     "type": "Support",
+     "fp": 15,
+     "rng": "3",
+     "area": "2v2",
+     "target": "",
+     "attr": "Int",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        ""
+     ],
+     "effect": "Remove: Disabled, Immobile, Amnesia, Blind, Sleep, Poison, Toad, Petrified",
+     "cost": 300,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Mercy",
+     "origin": "Medic",
+     "type": "Special",
+     "fp": 55,
+     "rng": "5",
+     "area": "1",
+     "target": "",
+     "attr": "Int",
+     "pow": "5d10",
+     "dmg": "Holy",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 600,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Headbutt",
+     "origin": "Goblin",
+     "type": "Attack",
+     "fp": null,
+     "rng": "1v2",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "1d4",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Dazed",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Stink Cloud",
+     "origin": "Goblin",
+     "type": "Status",
+     "fp": null,
+     "rng": "Self",
+     "area": "2v1",
+     "target": "Not Self",
+     "attr": "Str",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Poison",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Tantrum",
+     "origin": "Goblin",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "End",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        15,
+        ""
+     ],
+     "effect": "Adds: Relentless",
+     "cost": 450,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Foul Gift",
+     "origin": "Goblin",
+     "type": "Status",
+     "fp": null,
+     "rng": "1v0",
+     "area": "1",
+     "target": "",
+     "attr": "End",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        5,
+        "Wil"
+     ],
+     "effect": "Adds: Petrified",
+     "cost": 600,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Honeydew",
+     "origin": "Locust",
+     "type": "Attack",
+     "fp": null,
+     "rng": "4",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        10,
+        "Wil"
+     ],
+     "effect": "Adds: Weak",
+     "cost": 90,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Screech",
+     "origin": "Locust",
+     "type": "Status",
+     "fp": null,
+     "rng": "Self",
+     "area": "2v2",
+     "target": "Not Self",
+     "attr": "Dex",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Removes: Regen, Fortify, Bolster, Brave, Clear, Relentless, Stealth, Reflect",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Kin Call",
+     "origin": "Locust",
+     "type": "Support",
+     "fp": null,
+     "rng": "3",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Dex +1",
+     "cost": 300,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Burrow",
+     "origin": "Locust",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Adds: Stealth",
+     "cost": 600,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Seed Shot",
+     "origin": "Dodo",
+     "type": "Attack",
+     "fp": null,
+     "rng": "4",
+     "area": "1",
+     "target": "",
+     "attr": "Agi",
+     "pow": "1d4",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 90,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Preening",
+     "origin": "Dodo",
+     "type": "Support",
+     "fp": null,
+     "rng": "1",
+     "area": "1",
+     "target": "Any",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Removes: Blind, Disabled, Immobile, Poison",
+     "cost": 150,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Calm Down",
+     "origin": "Dodo",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "2v1",
+     "target": "",
+     "attr": "Wil",
+     "pow": "1d6",
+     "dmg": "Healing",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "",
+     "cost": 200,
+     "ready": true,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Ruffled",
+     "origin": "Dodo",
+     "type": "Support",
+     "fp": null,
+     "rng": "Self",
+     "area": "1",
+     "target": "",
+     "attr": "",
+     "pow": "",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "Adds: Fortify, Bolster",
+     "cost": 600,
+     "ready": false,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Takedown",
+     "origin": "Hound",
+     "type": "Attack",
+     "fp": null,
+     "rng": "1v2",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "1d6",
+     "dmg": "",
+     "save": [
+        10,
+        "End"
+     ],
+     "effect": "Adds: Immobile",
+     "cost": null,
+     "ready": false,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  },
+   {
+     "name": "Bite",
+     "origin": "Hound",
+     "type": "Attack",
+     "fp": null,
+     "rng": "1v2",
+     "area": "1",
+     "target": "",
+     "attr": "Str",
+     "pow": "1d8",
+     "dmg": "",
+     "save": [
+        null,
+        ""
+     ],
+     "effect": "2d8 if Immobile",
+     "cost": null,
+     "ready": false,
+     "tags": [
+        "",
+        "",
+        ""
+     ]
+  }
+]

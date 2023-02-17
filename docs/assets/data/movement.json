@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Move I",
+    "origin": "Courier",
+    "effect": "Mv +1",
+    "cost": 200,
+    "ready": true
+  },
+  {
+    "name": "Gather",
+    "origin": "Artisan",
+    "effect": "Turn Objects into Items",
+    "cost": 120,
+    "ready": true
+  },
+  {
+    "name": "Jump I",
+    "origin": "Hunter, Locust",
+    "effect": "Jm +1",
+    "cost": 200,
+    "ready": true
+  },
+  {
+    "name": "Aquaphobia",
+    "origin": "Goblin",
+    "effect": "Cannot enter water",
+    "cost": 0,
+    "ready": true
+  },
+  {
+    "name": "Swim",
+    "origin": "Dodo",
+    "effect": "Move normally in water",
+    "cost": 200,
+    "ready": true
+  }
+]

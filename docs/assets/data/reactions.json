@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Opportunity",
+    "origin": "Courier",
+    "effect": "Attack a foe as they leave an adjacent space.",
+    "trigger": "Enemy leaves adjacent space",
+    "cost": 50,
+    "ready": true
+  },
+  {
+    "name": "Auto Heal",
+    "origin": "Artisan",
+    "effect": "Use a Potion to heal yourself",
+    "trigger": "Damage",
+    "cost": 400,
+    "ready": true
+  },
+  {
+    "name": "Parry",
+    "origin": "Fighter",
+    "effect": "Add weapon Blk to block",
+    "trigger": "Always",
+    "cost": 200,
+    "ready": true
+  },
+  {
+    "name": "Agility Boost",
+    "origin": "Hunter",
+    "effect": "Agi +1",
+    "trigger": "Damage",
+    "cost": 900,
+    "ready": true
+  },
+  {
+    "name": "Take Cover",
+    "origin": "Hunter",
+    "effect": "Prevent ranged attack",
+    "trigger": "Ranged Attack",
+    "cost": 450,
+    "ready": true
+  },
+  {
+    "name": "Return",
+    "origin": "Chemist",
+    "effect": "Return fire with the triggering Special technique",
+    "trigger": "Special",
+    "cost": 300,
+    "ready": true
+  },
+  {
+    "name": "Regenerate",
+    "origin": "Medic",
+    "effect": "Adds: Regen",
+    "trigger": "Damage",
+    "cost": 200,
+    "ready": true
+  },
+  {
+    "name": "Counter",
+    "origin": "Mercenary, Goblin, Dodo",
+    "effect": "Return fire with an Attack",
+    "trigger": "Attack",
+    "cost": 300,
+    "ready": true
+  }
+]
