@@ -272,7 +272,7 @@
      "area": "1",
      "target": "",
      "attr": "Str",
-     "pow": "Wpn",
+     "pow": "1/2 Wpn",
      "dmg": "Focus",
      "save": [
         null,
@@ -395,7 +395,7 @@
      "pow": "",
      "dmg": "",
      "save": [
-        5,
+        10,
         "Dex"
      ],
      "effect": "Break Shield",

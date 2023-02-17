@@ -2,49 +2,49 @@
   {
     "name": "Potion",
     "type": "Healing",
-    "effect": "Recover: 1d6+4 Hp",
+    "effect": "Restore: 1d6 + 4 Hp",
     "cost": 5,
     "ready": true
   },
   {
     "name": "Mega Potion",
     "type": "Healing",
-    "effect": "Recover: 2d6+8 Hp",
+    "effect": "Restore: 2d6 + 8 Hp",
     "cost": 20,
     "ready": true
   },
   {
     "name": "Giga Potion",
     "type": "Healing",
-    "effect": "Recover: 3d6+12 Fp",
+    "effect": "Restore: 3d6 + 12 Hp",
     "cost": 70,
     "ready": true
   },
   {
     "name": "Ether",
     "type": "Healing",
-    "effect": "Recover: 1d6+4 Fp",
+    "effect": "Restore: 1d6 + 4 Fp",
     "cost": 20,
     "ready": true
   },
   {
     "name": "Mega Ether",
     "type": "Healing",
-    "effect": "Recover: 50 Fp",
+    "effect": "Restore: 2d6 + 8 Fp",
     "cost": 70,
     "ready": true
   },
   {
     "name": "Elixir",
     "type": "Healing",
-    "effect": "Recover: Full Hp, Full Fp",
+    "effect": "Restore: Full Hp, Full Fp",
     "cost": 500,
     "ready": true
   },
   {
     "name": "Revive",
     "type": "Healing",
-    "effect": "Removes: Dying, Recover 1d4 × 5 Hp",
+    "effect": "Removes: Dying, Restore 1d6 Hp",
     "cost": 30,
     "ready": true
   },

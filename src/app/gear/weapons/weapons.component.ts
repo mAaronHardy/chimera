@@ -10,11 +10,15 @@ export class WeaponsComponent {
   list : any[] = [];
   type : string = 'All';
 
+  ready() {
+    this.list = this.wpns.filter((item: any) => item.ready == (true));
+  }
+
   filter() {
     if ( this.type == 'All' ) {
-      this.list = this.wpns;
+      this.ready();
     } else {
-      this.list = this.wpns;
+      this.ready();
       this.list = this.list.filter((item: any) => item.type == (this.type));
     }
   }

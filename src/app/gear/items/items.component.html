@@ -7,15 +7,11 @@
                     <option ngValue="All">- All -</option>
                     <option ngValue="Healing">Healing</option>
                     <option ngValue="Status">Status</option>
-                    <option ngValue="Thrown">Thrown</option>
+                    <!-- <option ngValue="Thrown">Thrown</option> -->
                 </select>
             </label>
         </p>
         <p class="col xs-50 txt-right">
-            <label>
-                <span>Rare: </span>
-                <input type="checkbox" [(ngModel)]="rare" (change)="filter()">
-            </label>
         </p>
     </div>
     <table class="table-dark">

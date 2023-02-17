@@ -11,22 +11,18 @@ export class ItemsComponent {
   type : string = 'All';
   rare = false;
 
+  ready() {
+    this.list = this.items.filter((item: any) => item.ready == (true));
+  }
+
   filter() {
     if ( this.type == 'All' ) {
-      this.list = this.items;
+      this.ready()
     } else {
-      this.list = this.items.filter((item: any) => item.type == (this.type));
+      this.ready()
+      this.list = this.list.filter((item: any) => item.type == (this.type));
     }
   }
-
-  sortName() {
-    this.list.sort(function(a, b) {
-      let textA = a.name.toUpperCase();
-      let textB = b.name.toUpperCase();
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    });
-  }
-
 
   icon(type : string) {
     switch(type) {

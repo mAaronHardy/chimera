@@ -21,7 +21,7 @@
                 </p>
 
                 <p>Equip: <span *ngFor="let equ of job.equip; let i = index;"><span *ngIf="i > 0 && equ != ''">, </span><strong>{{equ}}</strong></span></p>
-                <p *ngIf="job.init[0] != ''">Starting Tech: <span *ngFor="let ini of job.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
+                <p *ngIf="job.init[0] != ''">Tech: <span *ngFor="let ini of job.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
 
                 <h3>{{job.act}}</h3>
                 <div class="table-dark">

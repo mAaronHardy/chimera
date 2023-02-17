@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <p *ngIf="mob.init[0] != ''">Starting Tech: <span *ngFor="let ini of mob.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
+                <p *ngIf="mob.init[0] != ''">Tech: <span *ngFor="let ini of mob.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
 
                 <h3>{{mob.act}}</h3>
                 <div class="table-dark">
