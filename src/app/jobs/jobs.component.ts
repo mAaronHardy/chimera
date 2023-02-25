@@ -29,14 +29,6 @@ export class JobsComponent {
     }
   }
 
-  getTech( job :string ) {
-    let list : any;
-    list.push(this.getAction(job))
-    list.push(this.getReaction(job))
-    console.log(list)
-    return list
-  }
-
   getAction( job : string ) {
     return this.action.filter((item: any) => item.origin.includes(job));
   }
@@ -55,14 +47,18 @@ export class JobsComponent {
   ngOnInit(): void {
     window.scroll({top: 0})
     
-    this.http.get('assets/data/jobs.json').subscribe((data : any) => { this.jobs = data });
-    this.http.get('assets/data/actions.json').subscribe((data : any) => { this.action = data });
-    this.http.get('assets/data/reactions.json').subscribe((data : any) => { this.reaction = data });
-    this.http.get('assets/data/passive.json').subscribe((data : any) => { this.passive = data });
-    this.http.get('assets/data/movement.json').subscribe((data : any) => { this.movement = data });
+    this.http.get('assets/data/jobs.json').subscribe((data : any) => { 
+      this.jobs = data.filter((item: any) => item.type == ('Job'));
+    });
+    this.http.get('assets/data/tech.json').subscribe((data : any) => { 
+      this.action = data.filter((item: any) => item.type == ('Action'));
+      this.reaction = data.filter((item: any) => item.type == ('Reaction'));
+      this.passive = data.filter((item: any) => item.type == ('Passive'));
+      this.movement = data.filter((item: any) => item.type == ('Movement'));
+    });
     
     for (let i = 0; i < this.jobs.length; i++) {
       this.show.push (false)
     }
-    }
+  }
 }

@@ -1,134 +1,232 @@
 [
-  {
-    "name": "Courier",
-    "mv": 1,
-    "jm": 0,
-    "str": 2,
-    "int": 0,
-    "end": 0,
-    "wil": 0,
-    "dex": 0,
-    "agi": 1,
-    "act": "Basics",
-    "init": [
-       ""
-    ],
-    "equip": [
-       "Sword",
-       "Axes",
-       "Hammers",
-       ""
-    ],
-    "desc": "Delivery person whose focuses are mobility and poisitioning."
- },
-  {
-    "name": "Artisan",
-    "mv": 0,
-    "jm": 0,
-    "str": 0,
-    "int": 0,
-    "end": 0,
-    "wil": 0,
-    "dex": 2,
-    "agi": 1,
-    "act": "Items",
-    "init": [
-       "Throw Items"
-    ],
-    "equip": [
-       "Guns",
-       "",
-       "",
-       ""
-    ],
-    "desc": "Craftsperson, skill and creating and distributing items."
- },
-  {
-    "name": "Fighter",
-    "mv": 0,
-    "jm": 0,
-    "str": 2,
-    "int": 0,
-    "end": 2,
-    "wil": 0,
-    "dex": 0,
-    "agi": 0,
-    "act": "Assault",
-    "init": [
-       ""
-    ],
-    "equip": [
-       "Sword",
-       "Hammers",
-       "Shields",
-       "Armor"
-    ],
-    "desc": "Warrior skilled at disabling and eliminating their enemies."
- },
-  {
-    "name": "Hunter",
-    "mv": 0,
-    "jm": 0,
-    "str": 1,
-    "int": 0,
-    "end": 0,
-    "wil": 0,
-    "dex": 3,
-    "agi": 0,
-    "act": "Aim",
-    "init": [
-       "Beastmaster"
-    ],
-    "equip": [
-       "Bows",
-       "Crossbows",
-       "Shields",
-       ""
-    ],
-    "desc": "Trained marksman, experts at attacking prey from range."
- },
-  {
-    "name": "Chemist",
-    "mv": 0,
-    "jm": 0,
-    "str": -1,
-    "int": 4,
-    "end": 0,
-    "wil": 2,
-    "dex": 0,
-    "agi": 0,
-    "act": "Chems",
-    "init": [
-       ""
-    ],
-    "equip": [
-       "Canes",
-       "Robes",
-       "",
-       ""
-    ],
-    "desc": "Scientist, capable of dealing bursts of elemental damage to friend and foe alike."
- },
-  {
-    "name": "Medic",
-    "mv": 0,
-    "jm": 0,
-    "str": 0,
-    "int": 1,
-    "end": 0,
-    "wil": 3,
-    "dex": 0,
-    "agi": 1,
-    "act": "Treatment",
-    "init": [
-       ""
-    ],
-    "equip": [
-       "Bags",
-       "Robes",
-       "",
-       ""
-    ],
-    "desc": "A healer practiced in recovering injuries even in the midst of battle."
- }
+   {
+     "name": "Courier",
+     "type": "Job",
+     "mv": 1,
+     "jm": 0,
+     "str": 0,
+     "int": 0,
+     "end": 0,
+     "wil": 0,
+     "dex": 0,
+     "agi": 1,
+     "act": "Transport",
+     "init": [
+        ""
+     ],
+     "equip": [
+        "Sword",
+        "Axes",
+        "Hammers",
+        ""
+     ],
+     "desc": "Delivery person whose focuses are mobility and poisitioning."
+  },
+   {
+     "name": "Artisan",
+     "type": "Job",
+     "mv": 0,
+     "jm": 0,
+     "str": 0,
+     "int": 0,
+     "end": 0,
+     "wil": 0,
+     "dex": 2,
+     "agi": 0,
+     "act": "Items",
+     "init": [
+        "Throw Items"
+     ],
+     "equip": [
+        "Guns",
+        "",
+        "",
+        ""
+     ],
+     "desc": "Craftsperson, skill and creating and distributing items."
+  },
+   {
+     "name": "Fighter",
+     "type": "Job",
+     "mv": 0,
+     "jm": 0,
+     "str": 2,
+     "int": 0,
+     "end": 1,
+     "wil": 0,
+     "dex": 0,
+     "agi": 0,
+     "act": "Assault",
+     "init": [
+        ""
+     ],
+     "equip": [
+        "Sword",
+        "Hammers",
+        "Shields",
+        "Armor"
+     ],
+     "desc": "Warrior skilled at disabling and eliminating their enemies."
+  },
+   {
+     "name": "Hunter",
+     "type": "Job",
+     "mv": 0,
+     "jm": 0,
+     "str": 1,
+     "int": 0,
+     "end": 0,
+     "wil": 0,
+     "dex": 2,
+     "agi": 0,
+     "act": "Aim",
+     "init": [
+        "Beastmaster"
+     ],
+     "equip": [
+        "Bows",
+        "Guns",
+        "Shields",
+        ""
+     ],
+     "desc": "Trained marksman, experts at attacking prey from range."
+  },
+   {
+     "name": "Chemist",
+     "type": "Job",
+     "mv": 0,
+     "jm": 0,
+     "str": -1,
+     "int": 3,
+     "end": 0,
+     "wil": 1,
+     "dex": 0,
+     "agi": 0,
+     "act": "Chems",
+     "init": [
+        ""
+     ],
+     "equip": [
+        "Canes",
+        "Robes",
+        "",
+        ""
+     ],
+     "desc": "Scientist, capable of dealing bursts of elemental damage to friend and foe alike."
+  },
+   {
+     "name": "Medic",
+     "type": "Job",
+     "mv": 0,
+     "jm": 0,
+     "str": 0,
+     "int": 1,
+     "end": 0,
+     "wil": 2,
+     "dex": 0,
+     "agi": 0,
+     "act": "Treatment",
+     "init": [
+        ""
+     ],
+     "equip": [
+        "Bags",
+        "Robes",
+        "",
+        ""
+     ],
+     "desc": "Practiced healer who treats injuries even in the midst of battle."
+  },
+   {
+     "name": "Humanoid",
+     "type": "Mob",
+     "mv": 3,
+     "jm": 3,
+     "str": 1,
+     "int": 1,
+     "end": 1,
+     "wil": 1,
+     "dex": 1,
+     "agi": 1,
+     "act": "Basics",
+     "init": [
+        "Worker"
+     ],
+     "equip": [
+        "Dagger",
+        "Clothing",
+        "",
+        ""
+     ],
+     "desc": "Humanoids posess a variety of skills making them ideal for many different jobs."
+  },
+   {
+     "name": "Goblin",
+     "type": "Mob",
+     "mv": 3,
+     "jm": 3,
+     "str": 4,
+     "int": 0,
+     "end": 3,
+     "wil": 0,
+     "dex": 1,
+     "agi": 0,
+     "act": "Rummage",
+     "init": [
+        ""
+     ],
+     "equip": [
+        "",
+        "",
+        "",
+        ""
+     ],
+     "desc": "Small beast, arguably so gross it's cute."
+  },
+   {
+     "name": "Locust",
+     "type": "Mob",
+     "mv": 3,
+     "jm": 4,
+     "str": 2,
+     "int": 0,
+     "end": 1,
+     "wil": 0,
+     "dex": 2,
+     "agi": 1,
+     "act": "Emerge",
+     "init": [
+        "Aquaphobia"
+     ],
+     "equip": [
+        "",
+        "",
+        "",
+        ""
+     ],
+     "desc": "Little noisy creature, emerges from the earth to live a short exciting life."
+  },
+   {
+     "name": "Dodo",
+     "type": "Mob",
+     "mv": 5,
+     "jm": 4,
+     "str": 3,
+     "int": 0,
+     "end": 0,
+     "wil": 0,
+     "dex": 1,
+     "agi": 1,
+     "act": "Forage",
+     "init": [
+        "Swim"
+     ],
+     "equip": [
+        "",
+        "",
+        "",
+        ""
+     ],
+     "desc": "Waterfowl more interested in eating that fighting. It's mobility makes it a useful mount."
+  }
 ]

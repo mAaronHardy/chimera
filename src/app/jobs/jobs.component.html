@@ -10,14 +10,14 @@
                 <p>{{job.desc}}</p>
 
                 <p>
-                    <span *ngIf="job.mv">Mv: <strong><span *ngIf="job.mv > -1">+</span>{{job.mv}} </strong></span>
-                    <span *ngIf="job.jm">Jm: <strong><span *ngIf="job.jm > -1">+</span>{{job.jm}} </strong></span>
-                    <span *ngIf="job.str">Str: <strong><span *ngIf="job.str > -1">+</span>{{job.str}} </strong></span>
-                    <span *ngIf="job.int">Int: <strong><span *ngIf="job.int > -1">+</span>{{job.int}} </strong></span>
-                    <span *ngIf="job.end">End: <strong><span *ngIf="job.end > -1">+</span>{{job.end}} </strong></span>
-                    <span *ngIf="job.wil">Wil: <strong><span *ngIf="job.wil > -1">+</span>{{job.wil}} </strong></span>
-                    <span *ngIf="job.dex">Dex: <strong><span *ngIf="job.dex > -1">+</span>{{job.dex}} </strong></span>
-                    <span *ngIf="job.agi">Agi: <strong><span *ngIf="job.agi > -1">+</span>{{job.agi}} </strong></span>
+                    <job-stat [stat]="job.mv">Mv: </job-stat>
+                    <job-stat [stat]="job.jm">Jm: </job-stat>
+                    <job-stat [stat]="job.str">Str: </job-stat>
+                    <job-stat [stat]="job.int">Int: </job-stat>
+                    <job-stat [stat]="job.end">End: </job-stat>
+                    <job-stat [stat]="job.wil">Wil: </job-stat>
+                    <job-stat [stat]="job.dex">Dex: </job-stat>
+                    <job-stat [stat]="job.agi">Agi: </job-stat>
                 </p>
 
                 <p>Equip: <span *ngFor="let equ of job.equip; let i = index;"><span *ngIf="i > 0 && equ != ''">, </span><strong>{{equ}}</strong></span></p>
@@ -31,43 +31,44 @@
                     <tech-table [tech]="getMovement(job.name)" cat="Movement" *ngIf="getMovement(job.name).length > 0"></tech-table>
                 </div>
 
-                <div class="action-details" *ngFor="let tec of getAction(job.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Action</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                <div class="action-details">
+                    <div *ngFor="let tec of getAction(job.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Action</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.effect}}</p>
+                        <tech-action [tec]="tec"></tech-action>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <tech-action [tec]="tec"></tech-action>
-                    <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
-                </div>
-                <div class="action-details" *ngFor="let tec of getReaction(job.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Reaction</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                    <div *ngFor="let tec of getReaction(job.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Reaction</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.desc}}</p>
+                        <p>Trigger: {{tec.trigger}}</p>
+                        <p>{{tec.effect}}</p>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <p>Trigger: {{tec.trigger}}</p>
-                    <p>{{tec.effect}}</p>
-                </div>
-                <div class="action-details" *ngFor="let tec of getPassive(job.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Passive</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                    <div *ngFor="let tec of getPassive(job.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Passive</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.desc}}</p>
+                        <p>{{tec.effect}}</p>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <p>{{tec.effect}}</p>
-                </div>
-                <div class="action-details" *ngFor="let tec of getMovement(job.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Movement</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                    <div *ngFor="let tec of getMovement(job.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Movement</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.desc}}</p>
+                        <p>{{tec.effect}}</p>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <p>{{tec.effect}}</p>
                 </div>
             </div>
         </div>

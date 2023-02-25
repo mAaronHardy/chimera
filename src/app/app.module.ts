@@ -13,6 +13,7 @@ import { TechTagsComponent } from './components/tech/tech-tags.component';
 import { PromoComponent } from './components/promo.component';
 
 import { FooterComponent } from './components/footer.component';
+import { StatComponent } from './components/stat.component';
 import { HomeComponent } from './home/home.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { MobsComponent } from './mobs/mobs.component';
@@ -35,6 +36,7 @@ import { ModPipe } from './mod.pipe';
     ModPipe,
 
     FooterComponent,
+    StatComponent,
     HomeComponent,
     JobsComponent,
     MobsComponent,
