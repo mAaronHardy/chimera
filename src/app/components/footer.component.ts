@@ -8,7 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         height: 100%;
       }
       body {
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         margin: 0;
         min-height: 100%;
         padding-bottom: 4rem;
