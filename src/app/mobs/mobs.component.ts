@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-mobs',
   templateUrl: './mobs.component.html',
-  styleUrls: ['./mobs.component.less'],
+  styleUrls: ['../jobs/jobs.component.less'],
 })
 export class MobsComponent {
   show : any[] = [];
@@ -47,11 +47,15 @@ export class MobsComponent {
   ngOnInit(): void {
     window.scroll({top: 0})
     
-    this.http.get('assets/data/mobs.json').subscribe((data : any) => { this.mobs = data });
-    this.http.get('assets/data/actions.json').subscribe((data : any) => { this.action = data });
-    this.http.get('assets/data/reactions.json').subscribe((data : any) => { this.reaction = data });
-    this.http.get('assets/data/passive.json').subscribe((data : any) => { this.passive = data });
-    this.http.get('assets/data/movement.json').subscribe((data : any) => { this.movement = data });
+    this.http.get('assets/data/mojo.json').subscribe((data : any) => { 
+      this.mobs = data.filter((item: any) => item.type == ('Mob'));
+    });
+    this.http.get('assets/data/tech.json').subscribe((data : any) => { 
+      this.action = data.filter((item: any) => item.type == ('Action'));
+      this.reaction = data.filter((item: any) => item.type == ('Reaction'));
+      this.passive = data.filter((item: any) => item.type == ('Passive'));
+      this.movement = data.filter((item: any) => item.type == ('Movement'));
+    });
     
     for (let i = 0; i < this.mobs.length; i++) {
       this.show.push (false)

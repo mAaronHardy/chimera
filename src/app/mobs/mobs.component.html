@@ -16,16 +16,16 @@
                         <p>Jm <strong>{{mob.jm}}</strong></p>
                     </div>
                     <div class="col xs-25">
-                        <p>Str <strong>{{mob.str}}</strong> ({{mob.str | mod}})</p>
-                        <p>Int <strong>{{mob.int}}</strong> ({{mob.int | mod}})</p>
+                        <p>Str <strong>{{mob.str}}</strong></p>
+                        <p>Int <strong>{{mob.int}}</strong></p>
                     </div>
                     <div class="col xs-25">
-                        <p>End <strong>{{mob.end}}</strong> ({{mob.end | mod}})</p>
-                        <p>Wil <strong>{{mob.wil}}</strong> ({{mob.wil | mod}})</p>
+                        <p>End <strong>{{mob.end}}</strong></p>
+                        <p>Wil <strong>{{mob.wil}}</strong></p>
                     </div>
                     <div class="col xs-25">
-                        <p>Dex <strong>{{mob.dex}}</strong> ({{mob.dex | mod}})</p>
-                        <p>Agi <strong>{{mob.agi}}</strong> ({{mob.agi | mod}})</p>
+                        <p>Dex <strong>{{mob.dex}}</strong></p>
+                        <p>Agi <strong>{{mob.agi}}</strong></p>
                     </div>
                 </div>
 
@@ -33,47 +33,50 @@
 
                 <h3>{{mob.act}}</h3>
                 <div class="table-dark">
-                    <tech-table [tech]="getAction(mob.name)" cat="Action" *ngIf="getAction(mob.name).length > 0"></tech-table>
-                    <tech-table [tech]="getReaction(mob.name)" cat="Reaction" *ngIf="getReaction(mob.name).length > 0"></tech-table>
-                    <tech-table [tech]="getPassive(mob.name)" cat="Passive" *ngIf="getPassive(mob.name).length > 0"></tech-table>
-                    <tech-table [tech]="getMovement(mob.name)" cat="Movement" *ngIf="getMovement(mob.name).length > 0"></tech-table>
+                    <tech-table [tech]="getAction(mob.name)" cat="Action ↯" *ngIf="getAction(mob.name).length > 0"></tech-table>
+                    <tech-table [tech]="getReaction(mob.name)" cat="Reaction ↶" *ngIf="getReaction(mob.name).length > 0"></tech-table>
+                    <tech-table [tech]="getPassive(mob.name)" cat="Passive ↻" *ngIf="getPassive(mob.name).length > 0"></tech-table>
+                    <tech-table [tech]="getMovement(mob.name)" cat="Movement ↗" *ngIf="getMovement(mob.name).length > 0"></tech-table>
                 </div>
-                <div class="action-details" *ngFor="let tec of getAction(mob.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Action</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+
+                <div class="action-details">
+                    <div *ngFor="let tec of getAction(mob.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Action ↯</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.effect}}</p>
+                        <tech-action [tec]="tec"></tech-action>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <tech-action [tec]="tec"></tech-action>
-                    <tech-tags [tags]="tec.tags" *ngIf="tec.tags[0] != ''"></tech-tags>
-                </div>
-                <div class="action-details" *ngFor="let tec of getReaction(mob.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Reaction</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                    <div *ngFor="let tec of getReaction(mob.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Reaction ↶</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.desc}}</p>
+                        <p>Trigger: {{tec.trigger}}</p>
+                        <p>{{tec.effect}}</p>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <p>{{tec.effect}}</p>
-                </div>
-                <div class="action-details" *ngFor="let tec of getPassive(mob.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Passive</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                    <div *ngFor="let tec of getPassive(mob.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Passive ↻</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.desc}}</p>
+                        <p>{{tec.effect}}</p>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <p>{{tec.effect}}</p>
-                </div>
-                <div class="action-details" *ngFor="let tec of getMovement(mob.name)">
-                    <h3 id="{{tec.name}}" class="action-name">{{tec.name}}</h3>
-                    <div class="top-corner">
-                        <strong>Movement</strong>
-                        <p class="txt-right">{{tec.cost}} JP</p>
+                    <div *ngFor="let tec of getMovement(mob.name)">
+                        <header class="action-details-item">
+                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
+                            <span>- Movement ↗</span>
+                            <span class="txt-right">{{tec.cost}} JP</span>
+                        </header>
+                        <p>{{tec.desc}}</p>
+                        <p>{{tec.effect}}</p>
                     </div>
-                    <p>{{tec.desc}}</p>
-                    <p>{{tec.effect}}</p>
                 </div>
             </div>
         </div>

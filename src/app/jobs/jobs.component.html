@@ -25,17 +25,17 @@
 
                 <h3>{{job.act}}</h3>
                 <div class="table-dark">
-                    <tech-table [tech]="getAction(job.name)" cat="Action" *ngIf="getAction(job.name).length > 0"></tech-table>
-                    <tech-table [tech]="getReaction(job.name)" cat="Reaction" *ngIf="getReaction(job.name).length > 0"></tech-table>
-                    <tech-table [tech]="getPassive(job.name)" cat="Passive" *ngIf="getPassive(job.name).length > 0"></tech-table>
-                    <tech-table [tech]="getMovement(job.name)" cat="Movement" *ngIf="getMovement(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getAction(job.name)" cat="Action ↯" *ngIf="getAction(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getReaction(job.name)" cat="Reaction ↶" *ngIf="getReaction(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getPassive(job.name)" cat="Passive ↻" *ngIf="getPassive(job.name).length > 0"></tech-table>
+                    <tech-table [tech]="getMovement(job.name)" cat="Movement ↗" *ngIf="getMovement(job.name).length > 0"></tech-table>
                 </div>
 
                 <div class="action-details">
                     <div *ngFor="let tec of getAction(job.name)">
                         <header class="action-details-item">
                             <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Action</span>
+                            <span>- Action ↯</span>
                             <span class="txt-right">{{tec.cost}} JP</span>
                         </header>
                         <p>{{tec.effect}}</p>
@@ -44,7 +44,7 @@
                     <div *ngFor="let tec of getReaction(job.name)">
                         <header class="action-details-item">
                             <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Reaction</span>
+                            <span>- Reaction ↶</span>
                             <span class="txt-right">{{tec.cost}} JP</span>
                         </header>
                         <p>{{tec.desc}}</p>
@@ -54,7 +54,7 @@
                     <div *ngFor="let tec of getPassive(job.name)">
                         <header class="action-details-item">
                             <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Passive</span>
+                            <span>- Passive ↻</span>
                             <span class="txt-right">{{tec.cost}} JP</span>
                         </header>
                         <p>{{tec.desc}}</p>
@@ -63,7 +63,7 @@
                     <div *ngFor="let tec of getMovement(job.name)">
                         <header class="action-details-item">
                             <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Movement</span>
+                            <span>- Movement ↗</span>
                             <span class="txt-right">{{tec.cost}} JP</span>
                         </header>
                         <p>{{tec.desc}}</p>

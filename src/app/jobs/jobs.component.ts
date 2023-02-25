@@ -47,7 +47,7 @@ export class JobsComponent {
   ngOnInit(): void {
     window.scroll({top: 0})
     
-    this.http.get('assets/data/jobs.json').subscribe((data : any) => { 
+    this.http.get('assets/data/mojo.json').subscribe((data : any) => { 
       this.jobs = data.filter((item: any) => item.type == ('Job'));
     });
     this.http.get('assets/data/tech.json').subscribe((data : any) => { 
