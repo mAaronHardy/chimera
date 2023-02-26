@@ -7,9 +7,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav.component';
-import { TechTableComponent } from './components/tech/tech-table.component';
+import { TechListComponent } from './components/tech/tech-list.component';
 import { TechActionComponent } from './components/tech/tech-action.component';
-import { TechTagsComponent } from './components/tech/tech-tags.component';
 import { PromoComponent } from './components/promo.component';
 
 import { FooterComponent } from './components/footer.component';
@@ -29,9 +28,8 @@ import { ModPipe } from './mod.pipe';
   declarations: [
     AppComponent,
     NavComponent,
-    TechTableComponent,
+    TechListComponent,
     TechActionComponent,
-    TechTagsComponent,
     PromoComponent,
     ModPipe,
 

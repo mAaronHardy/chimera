@@ -30,16 +30,16 @@ export class MobsComponent {
   }
 
   getAction( job : string ) {
-    return this.action.filter((item: any) => item.origin == (job));
+    return this.action.filter((item: any) => item.origin.includes(job));
   }
   getReaction( job : string ) {
-    return this.reaction.filter((item: any) => item.origin == (job));
+    return this.reaction.filter((item: any) => item.origin.includes(job));
   }
   getPassive( job : string ) {
-    return this.passive.filter((item: any) => item.origin == (job));
+    return this.passive.filter((item: any) => item.origin.includes(job));
   }
   getMovement( job : string ) {
-    return this.movement.filter((item: any) => item.origin == (job));
+    return this.movement.filter((item: any) => item.origin.includes(job));
   }
   
   constructor( private http: HttpClient ) { }

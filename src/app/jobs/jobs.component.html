@@ -24,31 +24,20 @@
                 <p *ngIf="job.init[0] != ''">Tech: <span *ngFor="let ini of job.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
 
                 <h3>{{job.act}}</h3>
-                <div class="table-dark">
-                    <tech-table [tech]="getAction(job.name)" cat="Action ↯" *ngIf="getAction(job.name).length > 0"></tech-table>
-                    <tech-table [tech]="getReaction(job.name)" cat="Reaction ↶" *ngIf="getReaction(job.name).length > 0"></tech-table>
-                    <tech-table [tech]="getPassive(job.name)" cat="Passive ↻" *ngIf="getPassive(job.name).length > 0"></tech-table>
-                    <tech-table [tech]="getMovement(job.name)" cat="Movement ↗" *ngIf="getMovement(job.name).length > 0"></tech-table>
-                </div>
+                <tech-list [mojo]="job.name"></tech-list>
 
                 <div class="action-details">
                     <div *ngFor="let tec of getAction(job.name)">
-                        <header class="action-details-item">
-                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Action ↯</span>
-                            <span class="txt-right">{{tec.cost}} JP</span>
-                        </header>
-                        <p>{{tec.effect}}</p>
                         <tech-action [tec]="tec"></tech-action>
                     </div>
                     <div *ngFor="let tec of getReaction(job.name)">
                         <header class="action-details-item">
                             <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Reaction ↶</span>
+                            <span>- Reaction ⭟</span>
                             <span class="txt-right">{{tec.cost}} JP</span>
                         </header>
                         <p>{{tec.desc}}</p>
-                        <p>Trigger: {{tec.trigger}}</p>
+                        <p *ngIf="tec.dmg">Trigger: {{tec.dmg}}</p>
                         <p>{{tec.effect}}</p>
                     </div>
                     <div *ngFor="let tec of getPassive(job.name)">

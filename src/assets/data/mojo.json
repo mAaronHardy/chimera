@@ -173,7 +173,7 @@
      "agi": 0,
      "act": "Rummage",
      "init": [
-        ""
+        "Counter"
      ],
      "equip": [
         "",

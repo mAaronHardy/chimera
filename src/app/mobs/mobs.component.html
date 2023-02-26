@@ -29,35 +29,25 @@
                     </div>
                 </div>
 
+                <p *ngIf="mob.equip[0] != ''">Equip: <span *ngFor="let equ of mob.equip; let i = index;"><span *ngIf="i > 0 && equ != ''">, </span><strong>{{equ}}</strong></span></p>
                 <p *ngIf="mob.init[0] != ''">Tech: <span *ngFor="let ini of mob.init; let i = index;"><span *ngIf="i > 0 && ini != ''">, </span><strong>{{ini}}</strong></span></p>
 
                 <h3>{{mob.act}}</h3>
-                <div class="table-dark">
-                    <tech-table [tech]="getAction(mob.name)" cat="Action ↯" *ngIf="getAction(mob.name).length > 0"></tech-table>
-                    <tech-table [tech]="getReaction(mob.name)" cat="Reaction ↶" *ngIf="getReaction(mob.name).length > 0"></tech-table>
-                    <tech-table [tech]="getPassive(mob.name)" cat="Passive ↻" *ngIf="getPassive(mob.name).length > 0"></tech-table>
-                    <tech-table [tech]="getMovement(mob.name)" cat="Movement ↗" *ngIf="getMovement(mob.name).length > 0"></tech-table>
-                </div>
+                <tech-list [mojo]="mob.name"></tech-list>
 
                 <div class="action-details">
                     <div *ngFor="let tec of getAction(mob.name)">
-                        <header class="action-details-item">
-                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Action ↯</span>
-                            <span class="txt-right">{{tec.cost}} JP</span>
-                        </header>
-                        <p>{{tec.effect}}</p>
                         <tech-action [tec]="tec"></tech-action>
                     </div>
                     <div *ngFor="let tec of getReaction(mob.name)">
                         <header class="action-details-item">
                             <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Reaction ↶</span>
+                            <span>- Reaction ⭟</span>
                             <span class="txt-right">{{tec.cost}} JP</span>
                         </header>
                         <p>{{tec.desc}}</p>
-                        <p>Trigger: {{tec.trigger}}</p>
-                        <p>{{tec.effect}}</p>
+                        <p *ngIf="tec.dmg">Trigger: {{tec.dmg}}</p>
+                        <p>Dex Check (10), Success: {{tec.effect}}</p>
                     </div>
                     <div *ngFor="let tec of getPassive(mob.name)">
                         <header class="action-details-item">
