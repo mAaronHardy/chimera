@@ -18,6 +18,7 @@
                     <option ngValue="Hide">Hide</option>
                     <option ngValue="Accessory">- Accessory -</option>
                     <option ngValue="Hat">Hat</option>
+                    <option ngValue="Helm">Helm</option>
                     <option ngValue="Cloak">Cloak</option>
                     <option ngValue="Gloves">Gloves</option>
                     <option ngValue="Shoes">Shoes</option>
@@ -33,22 +34,21 @@
         <tr>
             <td></td>
             <td><strong>Name</strong></td>
-            <td class="txt-center pnt"><strong>Blk</strong></td>
-            <td class="txt-center pnt"><strong>Eva</strong></td>
-            <td class="txt-center pnt"><strong>Sav</strong></td>
+            <td class="txt-center pnt"><strong>Hp</strong></td>
+            <td class="txt-center pnt"><strong>Fp</strong></td>
             <td><strong>Effect</strong></td>
             <td class="txt-right"><strong>Cost</strong></td>
         </tr>
         <tr *ngFor="let eqip of list">
-            <td>{{icon(eqip.type)}}</td>
+            <td>{{icon(eqip.subtype)}}</td>
             <td>{{eqip.name}}</td>
-            <td class="txt-center pnt">{{eqip.blk}}</td>
-            <td class="txt-center pnt">{{eqip.eva}}</td>
-            <td class="txt-center pnt">{{eqip.sav}}</td>
+            <td class="txt-center pnt">{{eqip.hp}}</td>
+            <td class="txt-center pnt">{{eqip.fp}}</td>
             <td>
                 <span>{{eqip.effect}}</span>
-                <br *ngIf="eqip.effect && eqip.equip">
-                <span>{{eqip.equip}}</span>
+                <span *ngIf="eqip.blk">Blk&nbsp;+{{eqip.blk}} </span>
+                <span *ngIf="eqip.eva">Eva&nbsp;+{{eqip.eva}} </span>
+                <span *ngIf="eqip.sav">Sav&nbsp;+{{eqip.sav}}</span>
             </td>
             <td class="txt-right">{{eqip.cost}}</td>
         </tr>

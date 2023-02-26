@@ -11,16 +11,17 @@ export class ArmorComponent {
   type : string = 'All';
 
   filterRready() {
-      this.list = this.equip.filter((item: any) => item.ready == (true));
+      this.list = this.equip;
+      // this.list = this.equip.filter((item: any) => item.ready == (true));
   }
 
   filterType() {
     if ( this.type == 'All' ) {
       this.filterRready();
     } else if ( this.type == 'Accessory' ) {
-      this.list = this.list.filter((item: any) => item.type == ('Hat') || item.type == ('Cloak') || item.type == ('Gloves') || item.type == ('Shoes') || item.type == ('Amulet') || item.type == ('Ring'));
+      this.list = this.list.filter((item: any) => item.type == ('Accessory'));
     } else {
-      this.list = this.list.filter((item: any) => item.type == (this.type));
+      this.list = this.list.filter((item: any) => item.subtype == (this.type));
     }
   }
 
@@ -29,19 +30,21 @@ export class ArmorComponent {
       this.filterType();
   }
 
-  sortName() {
-    this.list.sort(function(a, b) {
-      let textA = a.name.toUpperCase();
-      let textB = b.name.toUpperCase();
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    });
-  }
+  // sortName() {
+  //   this.list.sort(function(a, b) {
+  //     let textA = a.name.toUpperCase();
+  //     let textB = b.name.toUpperCase();
+  //     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+  //   });
+  // }
 
 
   icon(type : string) {
     switch(type) {
       case "Hat":
         return "👒";
+      case "Helm":
+        return "🪖";
       case "Clothing":
         return "👕";
       case "Hide":
@@ -68,9 +71,11 @@ export class ArmorComponent {
   constructor( private http: HttpClient ) { }
 
   ngOnInit(): void {
-    this.http.get('assets/data/equip.json').subscribe((data : any) => { this.equip = data });
-    this.http.get('assets/data/equip.json').subscribe((data : any) => {
-      this.list = data.filter((item: any) => item.ready == (true));
+    this.http.get('assets/data/gear.json').subscribe((data : any) => {
+      this.equip = data.filter((item: any) => item.type == ('Armor') || item.type == ('Accessory'));
+    });
+    this.http.get('assets/data/gear.json').subscribe((data : any) => {
+      this.list = data.filter((item: any) => item.type == ('Armor') || item.type == ('Accessory'));
     });
   }
 }

@@ -11,7 +11,7 @@ export class WeaponsComponent {
   type : string = 'All';
 
   ready() {
-    this.list = this.wpns.filter((item: any) => item.ready == (true));
+    this.list = this.wpns;
   }
 
   filter() {
@@ -19,17 +19,17 @@ export class WeaponsComponent {
       this.ready();
     } else {
       this.ready();
-      this.list = this.list.filter((item: any) => item.type == (this.type));
+      this.list = this.list.filter((item: any) => item.subtype == (this.type));
     }
   }
 
-  sortName() {
-    this.list.sort(function(a, b) {
-      let textA = a.name.toUpperCase();
-      let textB = b.name.toUpperCase();
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    });
-  }
+  // sortName() {
+  //   this.list.sort(function(a, b) {
+  //     let textA = a.name.toUpperCase();
+  //     let textB = b.name.toUpperCase();
+  //     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+  //   });
+  // }
 
   icon(type : string) {
     switch(type) {
@@ -71,9 +71,11 @@ export class WeaponsComponent {
   constructor( private http: HttpClient ) { }
 
   ngOnInit(): void {
-    this.http.get('assets/data/arms.json').subscribe((data : any) => { this.wpns = data });
-    this.http.get('assets/data/arms.json').subscribe((data : any) => {
-      this.list = data.filter((item: any) => item.ready == (true));
+    this.http.get('assets/data/gear.json').subscribe((data : any) => {
+      this.wpns = data.filter((item: any) => item.type == ('Weapon'));
+    });
+    this.http.get('assets/data/gear.json').subscribe((data : any) => {
+      this.list = data.filter((item: any) => item.type == ('Weapon'));
     });
   }
 }
