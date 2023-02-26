@@ -13,6 +13,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build --base-href=https://maaronhardy.github.io/chimera/` to build the project. The build artifacts will be stored in the `docs` directory.
+Make a copy of index.html and rename it to 404.html.
 
 ## Running unit tests
 
