@@ -19,7 +19,7 @@ export class ItemsComponent {
       this.ready()
     } else {
       this.ready()
-      this.list = this.list.filter((item: any) => item.type == (this.type));
+      this.list = this.list.filter((item: any) => item.subtype == (this.type));
     }
   }
 
