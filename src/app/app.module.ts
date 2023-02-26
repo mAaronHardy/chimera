@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav.component';
 import { TechListComponent } from './components/tech/tech-list.component';
 import { TechActionComponent } from './components/tech/tech-action.component';
+import { TechOtherComponent } from './components/tech/tech-other.component';
 import { PromoComponent } from './components/promo.component';
 
 import { FooterComponent } from './components/footer.component';
@@ -30,6 +31,7 @@ import { ModPipe } from './mod.pipe';
     NavComponent,
     TechListComponent,
     TechActionComponent,
+    TechOtherComponent,
     PromoComponent,
     ModPipe,
 

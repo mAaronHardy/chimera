@@ -2,21 +2,9 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'tech-action',
+  styleUrls: ['./tech.less'],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <style>
-      .action-details-item {
-        display: grid;
-        grid-template-columns: max-content auto auto;
-        gap: 0.25rem;
-      }
-      h4 {
-        font-family: serif;
-        font-size: 1.1rem;
-        text-transform: none;
-      }
-    </style>
-
     <header class="action-details-item">
       <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
       <span>Action ↯</span>

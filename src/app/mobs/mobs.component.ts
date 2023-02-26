@@ -28,19 +28,6 @@ export class MobsComponent {
       this.show[i] = true;
     }
   }
-
-  getAction( job : string ) {
-    return this.action.filter((item: any) => item.origin.includes(job));
-  }
-  getReaction( job : string ) {
-    return this.reaction.filter((item: any) => item.origin.includes(job));
-  }
-  getPassive( job : string ) {
-    return this.passive.filter((item: any) => item.origin.includes(job));
-  }
-  getMovement( job : string ) {
-    return this.movement.filter((item: any) => item.origin.includes(job));
-  }
   
   constructor( private http: HttpClient ) { }
   
@@ -49,12 +36,6 @@ export class MobsComponent {
     
     this.http.get('assets/data/mojo.json').subscribe((data : any) => { 
       this.mobs = data.filter((item: any) => item.type == ('Mob'));
-    });
-    this.http.get('assets/data/tech.json').subscribe((data : any) => { 
-      this.action = data.filter((item: any) => item.type == ('Action'));
-      this.reaction = data.filter((item: any) => item.type == ('Reaction'));
-      this.passive = data.filter((item: any) => item.type == ('Passive'));
-      this.movement = data.filter((item: any) => item.type == ('Movement'));
     });
     
     for (let i = 0; i < this.mobs.length; i++) {

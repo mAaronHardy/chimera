@@ -25,40 +25,6 @@
 
                 <h3>{{job.act}}</h3>
                 <tech-list [mojo]="job.name"></tech-list>
-
-                <div class="action-details">
-                    <div *ngFor="let tec of getAction(job.name)">
-                        <tech-action [tec]="tec"></tech-action>
-                    </div>
-                    <div *ngFor="let tec of getReaction(job.name)">
-                        <header class="action-details-item">
-                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Reaction ⭟</span>
-                            <span class="txt-right">{{tec.cost}} JP</span>
-                        </header>
-                        <p>{{tec.desc}}</p>
-                        <p *ngIf="tec.dmg">Trigger: {{tec.dmg}}</p>
-                        <p>{{tec.effect}}</p>
-                    </div>
-                    <div *ngFor="let tec of getPassive(job.name)">
-                        <header class="action-details-item">
-                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Passive ↻</span>
-                            <span class="txt-right">{{tec.cost}} JP</span>
-                        </header>
-                        <p>{{tec.desc}}</p>
-                        <p>{{tec.effect}}</p>
-                    </div>
-                    <div *ngFor="let tec of getMovement(job.name)">
-                        <header class="action-details-item">
-                            <h4 id="{{tec.name}}" class="action-name">{{tec.name}}</h4>
-                            <span>- Movement ↗</span>
-                            <span class="txt-right">{{tec.cost}} JP</span>
-                        </header>
-                        <p>{{tec.desc}}</p>
-                        <p>{{tec.effect}}</p>
-                    </div>
-                </div>
             </div>
         </div>
     </ng-container>

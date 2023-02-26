@@ -3,40 +3,9 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'tech-list',
+  styleUrls: ['./tech.less'],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <style>
-      .bg-black {
-        background: #000000ee;
-        color: #ffffff;
-        padding: 1rem;
-        border-radius: 0.5rem;
-      }
-      .tech-head, .tech-button {
-        color: white;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 1rem;
-      }
-      .tech-head {
-        margin-bottom: 0.5rem;
-      }
-      .tech-button {
-        background: none;
-        border: none;
-        border-top: solid 1px #c1c1c1;
-        color: white;
-        cursor: pointer;
-        font-family: serif;
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        width: 100%;
-      }
-      .tech-button:hover {
-        transition: .25s;
-        color: #f34232;
-      }
-    </style>
       <div class="bg-black">
         <ng-container>
           <div class="tech-head">
@@ -90,6 +59,22 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
         </ng-container>
       </ng-container>
     </div>
+
+    <div class="action-details">
+      <div *ngFor="let tec of action">
+          <tech-action [tec]="tec"></tech-action>
+      </div>
+      <div *ngFor="let tec of reaction">
+        <tech-other [tec]="tec"></tech-other>
+      </div>
+      <div *ngFor="let tec of passive">
+        <tech-other [tec]="tec"></tech-other>
+      </div>
+      <div *ngFor="let tec of movement">
+        <tech-other [tec]="tec"></tech-other>
+      </div>
+    </div>
+
   `,
 })
 export class TechListComponent {
