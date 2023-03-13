@@ -10,7 +10,8 @@
      "wil": 0,
      "dex": 0,
      "agi": 1,
-     "act": "Transport",
+     "tot": 2,
+     "act": "Delivery",
      "init": [
         ""
      ],
@@ -33,6 +34,7 @@
      "wil": 0,
      "dex": 2,
      "agi": 0,
+     "tot": 2,
      "act": "Items",
      "init": [
         "Throw Items"
@@ -56,6 +58,7 @@
      "wil": 0,
      "dex": 0,
      "agi": 0,
+     "tot": 3,
      "act": "Assault",
      "init": [
         ""
@@ -66,7 +69,7 @@
         "Shields",
         "Armor"
      ],
-     "desc": "Warrior skilled at disabling and eliminating their enemies."
+     "desc": "Warrior trained to disable and eliminate enemies."
   },
    {
      "name": "Hunter",
@@ -79,6 +82,7 @@
      "wil": 0,
      "dex": 2,
      "agi": 0,
+     "tot": 3,
      "act": "Aim",
      "init": [
         "Beastmaster"
@@ -89,7 +93,7 @@
         "Shields",
         ""
      ],
-     "desc": "Trained marksman, experts at attacking prey from range."
+     "desc": "Expert marksman, skilled at attacking prey from range."
   },
    {
      "name": "Chemist",
@@ -102,6 +106,7 @@
      "wil": 1,
      "dex": 0,
      "agi": 0,
+     "tot": 3,
      "act": "Chems",
      "init": [
         ""
@@ -125,14 +130,15 @@
      "wil": 2,
      "dex": 0,
      "agi": 0,
+     "tot": 3,
      "act": "Treatment",
      "init": [
-        ""
+        "Healer"
      ],
      "equip": [
         "Bags",
         "Robes",
-        "",
+        "Helms",
         ""
      ],
      "desc": "Practiced healer who treats injuries even in the midst of battle."
@@ -148,6 +154,7 @@
      "wil": 1,
      "dex": 1,
      "agi": 1,
+     "tot": 12,
      "act": "Basics",
      "init": [
         "Worker"
@@ -158,19 +165,20 @@
         "",
         ""
      ],
-     "desc": "Humanoids posess a variety of skills making them ideal for many different jobs."
+     "desc": "Humanois possess a variety of skills making them ideal for various professions."
   },
    {
      "name": "Goblin",
      "type": "Mob",
      "mv": 3,
      "jm": 3,
-     "str": 4,
+     "str": 2,
      "int": 0,
-     "end": 3,
+     "end": 4,
      "wil": 0,
      "dex": 1,
-     "agi": 0,
+     "agi": 1,
+     "tot": 14,
      "act": "Rummage",
      "init": [
         "Counter"
@@ -181,19 +189,20 @@
         "",
         ""
      ],
-     "desc": "Small beast, arguably so gross it's cute."
+     "desc": "Goblins are small beast that are as cute as they are gross."
   },
    {
      "name": "Locust",
      "type": "Mob",
      "mv": 3,
-     "jm": 4,
-     "str": 2,
+     "jm": 5,
+     "str": 1,
      "int": 0,
      "end": 1,
      "wil": 0,
-     "dex": 2,
+     "dex": 3,
      "agi": 1,
+     "tot": 14,
      "act": "Emerge",
      "init": [
         "Aquaphobia"
@@ -204,19 +213,20 @@
         "",
         ""
      ],
-     "desc": "Little noisy creature, emerges from the earth to live a short exciting life."
+     "desc": "Locust are noisy creatures that intermittently emerge from the earth in large numbers."
   },
    {
      "name": "Dodo",
      "type": "Mob",
      "mv": 5,
      "jm": 4,
-     "str": 3,
+     "str": 2,
      "int": 0,
-     "end": 0,
+     "end": 1,
      "wil": 0,
      "dex": 1,
      "agi": 1,
+     "tot": 14,
      "act": "Forage",
      "init": [
         "Swim"
@@ -227,6 +237,6 @@
         "",
         ""
      ],
-     "desc": "Waterfowl more interested in eating that fighting. It's mobility makes it a useful mount."
+     "desc": "Dodo s are dull waterfowl more interested in eating that fighting. Their mobility makes them useful mounts."
   }
 ]
