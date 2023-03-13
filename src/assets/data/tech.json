@@ -7,7 +7,7 @@
     "fp": null,
     "rng": "1v2",
     "area": 1,
-    "pow": "1d6",
+    "pow": "1d4",
     "attr": "Str",
     "dmg": "",
     "sav": "End",
@@ -61,7 +61,7 @@
     "sav": "",
     "chk": null,
     "effect": "Mv ×2 (for 1 turn)",
-    "cost": 50
+    "cost": 200
   },
   {
     "name": "Retreat",
@@ -69,15 +69,15 @@
     "subtype": "Support",
     "origin": "Courier",
     "fp": null,
-    "rng": "Self",
-    "area": 1,
+    "rng": "",
+    "area": null,
     "pow": "",
     "attr": "",
     "dmg": "",
     "sav": "",
     "chk": null,
-    "effect": "Immune: Opportunist (for 1 turn)",
-    "cost": 50
+    "effect": "Immune: Reactions (for 1 turn)",
+    "cost": 70
   },
   {
     "name": "Equip Axes",
@@ -96,7 +96,7 @@
     "cost": 170
   },
   {
-    "name": "Move I",
+    "name": "Move",
     "type": "Movement",
     "subtype": "",
     "origin": "Courier",
@@ -112,6 +112,38 @@
     "cost": 200
   },
   {
+    "name": "Expedite",
+    "type": "Movement",
+    "subtype": "",
+    "origin": "Courier",
+    "fp": null,
+    "rng": "",
+    "area": null,
+    "pow": "",
+    "attr": "",
+    "dmg": "",
+    "sav": "",
+    "chk": null,
+    "effect": "Mv +3",
+    "cost": 1000
+  },
+  {
+    "name": "Swift",
+    "type": "Passive",
+    "subtype": "",
+    "origin": "Courier",
+    "fp": null,
+    "rng": "Self",
+    "area": 1,
+    "pow": "",
+    "attr": "",
+    "dmg": "",
+    "sav": "",
+    "chk": null,
+    "effect": "Immune: Reactions",
+    "cost": 600
+  },
+  {
     "name": "Item",
     "type": "Action",
     "subtype": "Support",
@@ -125,7 +157,7 @@
     "sav": "",
     "chk": null,
     "effect": "Use an Item",
-    "cost": 50
+    "cost": 100
   },
   {
     "name": "Reequip",
@@ -141,7 +173,7 @@
     "sav": "",
     "chk": null,
     "effect": "Change one equipment",
-    "cost": 50
+    "cost": 70
   },
   {
     "name": "Reassign",
@@ -157,7 +189,7 @@
     "sav": "",
     "chk": null,
     "effect": "Change one reaction, support, or movement technique",
-    "cost": null
+    "cost": 70
   },
   {
     "name": "Auto Heal",
@@ -253,7 +285,7 @@
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 250
+    "cost": 150
   },
   {
     "name": "Break Strength",
@@ -268,40 +300,8 @@
     "dmg": "",
     "sav": "Wil",
     "chk": 10,
-    "effect": "Str -1",
-    "cost": 250
-  },
-  {
-    "name": "Break Mind",
-    "type": "Action",
-    "subtype": "Attack",
-    "origin": "Fighter",
-    "fp": null,
-    "rng": "Wpn",
-    "area": 1,
-    "pow": "",
-    "attr": "Str",
-    "dmg": "",
-    "sav": "Wil",
-    "chk": 10,
-    "effect": "Int -1",
-    "cost": 250
-  },
-  {
-    "name": "Break Aim",
-    "type": "Action",
-    "subtype": "Attack",
-    "origin": "Fighter",
-    "fp": null,
-    "rng": "Wpn",
-    "area": 1,
-    "pow": "",
-    "attr": "Str",
-    "dmg": "",
-    "sav": "Wil",
-    "chk": 10,
-    "effect": "Dex -1",
-    "cost": 250
+    "effect": "Str -2",
+    "cost": 200
   },
   {
     "name": "Break Stride",
@@ -316,8 +316,40 @@
     "dmg": "",
     "sav": "Wil",
     "chk": 10,
-    "effect": "Agi -1",
-    "cost": 250
+    "effect": "Agi -2",
+    "cost": 300
+  },
+  {
+    "name": "Break Mind",
+    "type": "Action",
+    "subtype": "Attack",
+    "origin": "Fighter",
+    "fp": null,
+    "rng": "Wpn",
+    "area": 1,
+    "pow": "",
+    "attr": "Str",
+    "dmg": "",
+    "sav": "Wil",
+    "chk": 10,
+    "effect": "Int -2",
+    "cost": 400
+  },
+  {
+    "name": "Break Aim",
+    "type": "Action",
+    "subtype": "Attack",
+    "origin": "Fighter",
+    "fp": null,
+    "rng": "Wpn",
+    "area": 1,
+    "pow": "",
+    "attr": "Str",
+    "dmg": "",
+    "sav": "Wil",
+    "chk": 10,
+    "effect": "Dex -2",
+    "cost": 400
   },
   {
     "name": "Break Shield",
@@ -336,22 +368,6 @@
     "cost": 300
   },
   {
-    "name": "Break Weapon",
-    "type": "Action",
-    "subtype": "Attack",
-    "origin": "Fighter",
-    "fp": null,
-    "rng": "Wpn",
-    "area": 1,
-    "pow": "",
-    "attr": "Str",
-    "dmg": "",
-    "sav": "Dex",
-    "chk": 5,
-    "effect": "Break Weapon",
-    "cost": 400
-  },
-  {
     "name": "Break Armor",
     "type": "Action",
     "subtype": "Attack",
@@ -366,6 +382,22 @@
     "chk": 5,
     "effect": "Break Armor",
     "cost": 400
+  },
+  {
+    "name": "Break Weapon",
+    "type": "Action",
+    "subtype": "Attack",
+    "origin": "Fighter",
+    "fp": null,
+    "rng": "Wpn",
+    "area": 1,
+    "pow": "",
+    "attr": "Str",
+    "dmg": "",
+    "sav": "Dex",
+    "chk": 5,
+    "effect": "Break Weapon",
+    "cost": 600
   },
   {
     "name": "Parry",
@@ -448,22 +480,6 @@
     "cost": 100
   },
   {
-    "name": "Critical Shot",
-    "type": "Action",
-    "subtype": "Attack",
-    "origin": "Hunter",
-    "fp": null,
-    "rng": "Wpn",
-    "area": 1,
-    "pow": "Wpn + 5",
-    "attr": "Agi",
-    "dmg": "",
-    "sav": "",
-    "chk": null,
-    "effect": "Target Blk & Eva +10 (for this attack)",
-    "cost": 300
-  },
-  {
     "name": "Poison Shot",
     "type": "Action",
     "subtype": "Attack",
@@ -493,7 +509,7 @@
     "sav": "End",
     "chk": 10,
     "effect": "Adds: Immobile",
-    "cost": 200
+    "cost": 250
   },
   {
     "name": "Arm Shot",
@@ -509,10 +525,10 @@
     "sav": "End",
     "chk": 10,
     "effect": "Adds: Disable",
-    "cost": 200
+    "cost": 250
   },
   {
-    "name": "Head Shot",
+    "name": "Concussive Shot",
     "type": "Action",
     "subtype": "Attack",
     "origin": "Hunter",
@@ -525,7 +541,23 @@
     "sav": "End",
     "chk": 10,
     "effect": "Adds: Amnesia",
-    "cost": 200
+    "cost": 250
+  },
+  {
+    "name": "Critical Shot",
+    "type": "Action",
+    "subtype": "Attack",
+    "origin": "Hunter",
+    "fp": null,
+    "rng": "Wpn",
+    "area": 1,
+    "pow": "Wpn + 5",
+    "attr": "Agi",
+    "dmg": "",
+    "sav": "",
+    "chk": null,
+    "effect": "Target Blk & Eva +10 (for this attack)",
+    "cost": 300
   },
   {
     "name": "Burial",
@@ -560,7 +592,7 @@
     "cost": 900
   },
   {
-    "name": "Take Cover",
+    "name": "Cover",
     "type": "Reaction",
     "subtype": "Ranged Attack",
     "origin": "Hunter",
@@ -573,10 +605,10 @@
     "sav": "Dex",
     "chk": 10,
     "effect": "Immune to ranged attacks",
-    "cost": 450
+    "cost": 600
   },
   {
-    "name": "Equip Crossbows",
+    "name": "Equip Bows",
     "type": "Passive",
     "subtype": "",
     "origin": "Hunter",
@@ -589,7 +621,7 @@
     "sav": "",
     "chk": null,
     "effect": "Equip Crossbows",
-    "cost": 350
+    "cost": 300
   },
   {
     "name": "Deadeye",
@@ -608,7 +640,7 @@
     "cost": 800
   },
   {
-    "name": "Jump I",
+    "name": "Jump",
     "type": "Movement",
     "subtype": "",
     "origin": "Hunter, Locust",
@@ -628,96 +660,144 @@
     "type": "Action",
     "subtype": "Special",
     "origin": "Chemist",
-    "fp": 3,
+    "fp": 4,
     "rng": "4",
     "area": 2,
-    "pow": "2d6",
+    "pow": "3d6",
     "attr": "Int",
     "dmg": "Fire",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 50
+    "cost": 100
   },
   {
     "name": "Cold",
     "type": "Action",
     "subtype": "Special",
     "origin": "Chemist",
-    "fp": 3,
+    "fp": 4,
     "rng": "4",
     "area": 2,
-    "pow": "2d6",
+    "pow": "3d6",
     "attr": "Int",
     "dmg": "Cold",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 50
+    "cost": 100
   },
   {
     "name": "Bolt",
     "type": "Action",
     "subtype": "Special",
     "origin": "Chemist",
-    "fp": 3,
+    "fp": 4,
     "rng": "4",
     "area": 2,
-    "pow": "2d6",
+    "pow": "3d6",
     "attr": "Int",
     "dmg": "Bolt",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 50
+    "cost": 100
   },
   {
     "name": "Mega Fire",
     "type": "Action",
     "subtype": "Special",
     "origin": "Chemist",
-    "fp": 8,
+    "fp": 12,
     "rng": "4",
     "area": 2,
-    "pow": "4d6",
+    "pow": "6d6",
     "attr": "Int",
     "dmg": "Fire",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 200
+    "cost": 300
   },
   {
     "name": "Mega Cold",
     "type": "Action",
     "subtype": "Special",
     "origin": "Chemist",
-    "fp": 8,
+    "fp": 12,
     "rng": "4",
     "area": 2,
-    "pow": "4d6",
+    "pow": "6d6",
     "attr": "Int",
     "dmg": "Cold",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 200
+    "cost": 300
   },
   {
     "name": "Mega Bolt",
     "type": "Action",
     "subtype": "Special",
     "origin": "Chemist",
-    "fp": 8,
+    "fp": 12,
     "rng": "4",
     "area": 2,
-    "pow": "4d6",
+    "pow": "6d6",
     "attr": "Int",
     "dmg": "Bolt",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 200
+    "cost": 300
+  },
+  {
+    "name": "Giga Fire",
+    "type": "Action",
+    "subtype": "Special",
+    "origin": "Chemist",
+    "fp": 18,
+    "rng": "4",
+    "area": 2,
+    "pow": "9d6",
+    "attr": "",
+    "dmg": "",
+    "sav": "",
+    "chk": null,
+    "effect": "",
+    "cost": 600
+  },
+  {
+    "name": "Giga Cold",
+    "type": "Action",
+    "subtype": "Special",
+    "origin": "Chemist",
+    "fp": 18,
+    "rng": "4",
+    "area": 2,
+    "pow": "9d6",
+    "attr": "",
+    "dmg": "",
+    "sav": "",
+    "chk": null,
+    "effect": "",
+    "cost": 600
+  },
+  {
+    "name": "Giga Bolt",
+    "type": "Action",
+    "subtype": "Special",
+    "origin": "Chemist",
+    "fp": 18,
+    "rng": "4",
+    "area": 2,
+    "pow": "9d6",
+    "attr": "",
+    "dmg": "",
+    "sav": "",
+    "chk": null,
+    "effect": "",
+    "cost": 600
   },
   {
     "name": "Poison",
@@ -765,7 +845,7 @@
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 1000
+    "cost": 1200
   },
   {
     "name": "Return",
@@ -797,7 +877,7 @@
     "sav": "",
     "chk": null,
     "effect": "Add Int score to special technique damage",
-    "cost": 400
+    "cost": 600
   },
   {
     "name": "Heal",
@@ -807,13 +887,13 @@
     "fp": 3,
     "rng": "4",
     "area": 2,
-    "pow": "2d6",
+    "pow": "3d6",
     "attr": "Int",
     "dmg": "Healing",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 50
+    "cost": 100
   },
   {
     "name": "Mega Heal",
@@ -823,13 +903,13 @@
     "fp": 8,
     "rng": "4",
     "area": 2,
-    "pow": "4d6",
+    "pow": "6d6",
     "attr": "Int",
     "dmg": "Healing",
     "sav": "",
     "chk": null,
     "effect": "",
-    "cost": 180
+    "cost": 300
   },
   {
     "name": "Resuscitate",
@@ -886,14 +966,14 @@
     "origin": "Medic",
     "fp": 5,
     "rng": "3",
-    "area": 2,
+    "area": 1,
     "pow": "",
     "attr": "Int",
     "dmg": "",
     "sav": "",
     "chk": 5,
     "effect": "Adds: Fortify",
-    "cost": 70
+    "cost": 200
   },
   {
     "name": "Bolster",
@@ -902,14 +982,14 @@
     "origin": "Medic",
     "fp": 5,
     "rng": "3",
-    "area": 2,
+    "area": 1,
     "pow": "",
     "attr": "Int",
     "dmg": "",
     "sav": "",
     "chk": 5,
     "effect": "Adds: Bolster",
-    "cost": 70
+    "cost": 200
   },
   {
     "name": "Bulwark",
@@ -925,7 +1005,7 @@
     "sav": "",
     "chk": 10,
     "effect": "Adds: Fortify & Bolster",
-    "cost": 400
+    "cost": 500
   },
   {
     "name": "Relentless",
@@ -989,7 +1069,7 @@
     "sav": "",
     "chk": null,
     "effect": "Gain resistance to special technique damage",
-    "cost": 400
+    "cost": 600
   },
   {
     "name": "Healer",
@@ -1053,7 +1133,7 @@
     "sav": "",
     "chk": null,
     "effect": "Blk & Eva +5 (for 1 turn)",
-    "cost": 50
+    "cost": 70
   },
   {
     "name": "Stone",
@@ -1064,7 +1144,7 @@
     "rng": "4",
     "area": 1,
     "pow": "1d4",
-    "attr": "Str",
+    "attr": "",
     "dmg": "",
     "sav": "End",
     "chk": 5,
@@ -1085,7 +1165,7 @@
     "sav": "",
     "chk": null,
     "effect": "Delay turn",
-    "cost": 0
+    "cost": 12
   },
   {
     "name": "Opportunist",
@@ -1101,7 +1181,7 @@
     "sav": "Dex",
     "chk": 10,
     "effect": "Attack foe as they leave the adjacent space.",
-    "cost": 50
+    "cost": 100
   },
   {
     "name": "Worker",
@@ -1207,13 +1287,13 @@
     "fp": null,
     "rng": "4",
     "area": 1,
-    "pow": "",
+    "pow": "1",
     "attr": "Agi",
     "dmg": "",
     "sav": "Wil",
-    "chk": 10,
+    "chk": 5,
     "effect": "Adds: Weak",
-    "cost": 90
+    "cost": 70
   },
   {
     "name": "Screech",
@@ -1351,13 +1431,13 @@
     "fp": null,
     "rng": "1",
     "area": 1,
-    "pow": "1d6",
+    "pow": "1d4",
     "attr": "Str",
     "dmg": "",
     "sav": "End",
     "chk": 10,
     "effect": "Adds: Immobile",
-    "cost": null
+    "cost": 200
   },
   {
     "name": "Bite",
@@ -1373,6 +1453,54 @@
     "sav": "",
     "chk": null,
     "effect": "2d8 if Immobile",
-    "cost": null
+    "cost": 450
+  },
+  {
+    "name": "Potion",
+    "type": "Action",
+    "subtype": "Support",
+    "origin": "Item",
+    "fp": null,
+    "rng": "1",
+    "area": null,
+    "pow": "1d6",
+    "attr": "4",
+    "dmg": "Healing",
+    "sav": "",
+    "chk": null,
+    "effect": "",
+    "cost": 5
+  },
+  {
+    "name": "Ether",
+    "type": "Action",
+    "subtype": "Support",
+    "origin": "Item",
+    "fp": null,
+    "rng": "1",
+    "area": null,
+    "pow": "1d4",
+    "attr": "",
+    "dmg": "Focusing",
+    "sav": "",
+    "chk": null,
+    "effect": "",
+    "cost": 12
+  },
+  {
+    "name": "Revive",
+    "type": "Action",
+    "subtype": "Support",
+    "origin": "Item",
+    "fp": null,
+    "rng": "1",
+    "area": null,
+    "pow": "1d6",
+    "attr": "",
+    "dmg": "Healing",
+    "sav": "",
+    "chk": null,
+    "effect": "Removes: Dying",
+    "cost": 30
   }
 ]

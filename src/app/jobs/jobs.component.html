@@ -2,7 +2,7 @@
 <div class="tile-group container-lg">
     <ng-container *ngFor="let job of jobs; let i = index">
         <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)">
-            <img src="assets/images/{{job.name}}.png">
+            <img src="assets/images/avatars/{{job.name}}.png">
         </button>
         <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
             <div class="content">

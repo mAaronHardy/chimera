@@ -11,7 +11,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
     <div id="content" class="content">
         <p><ng-content></ng-content></p>
         <p class="txt-center">
-            <button class="promo-button" [routerLink]="link">{{button}}</button>
+            <button class="promo-button button" [routerLink]="link">{{button}}</button>
         </p>
     </div>
   `,

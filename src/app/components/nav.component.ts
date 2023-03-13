@@ -101,10 +101,10 @@ import { Router } from '@angular/router';
     </style>
     <nav class="nav-menu" [ngClass]="{show}">
       <div class="grid">
-        <div class="col xs-50">
+        <div class="col xs-75">
           <a routerLink="/" class="home-link">👹Chimera</a>
         </div>
-        <div class="col xs-50">
+        <div class="col xs-25">
           <button class="menu-button txt-right" (click)="toggle()">{{show ? "✕" : "☰"}}</button>
         </div>
       </div>

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./create.component.less']
 })
 export class CreateComponent {
+  ngOnInit(): void {
+    window.scroll({top: 0})
+  }
 
 }

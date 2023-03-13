@@ -2,7 +2,7 @@
 <div class="tile-group container-lg">
     <ng-container *ngFor="let mob of mobs; let i = index">
         <button class="tile-button" [ngClass]="show[i] ? 'active' : ''" (click)="toggle(i)">
-            <img src="assets/images/{{mob.name}}.png">
+            <img src="assets/images/avatars/{{mob.name}}.png">
         </button>
         <div class="tile-content" [ngClass]="show[i] ? 'active' : ''">
             <div class="content">
